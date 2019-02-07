@@ -88,4 +88,17 @@ get_playoff_results($semifinal_teams[1], "results/2018_kansas2_results.xml");
 get_playoff_results($semifinal_teams[2], "results/2018_kansas2_results.xml");
 get_playoff_results($semifinal_teams[3], "results/2018_kansas2_results.xml");
 
+// CHAMPIONSHIP //
+get_playoff_results($championship_teams[0], "results/2018_martinsville2_results.xml");
+get_playoff_results($championship_teams[1], "results/2018_martinsville2_results.xml");
+
+get_playoff_results($championship_teams[0], "results/2018_texas2_results.xml");
+get_playoff_results($championship_teams[1], "results/2018_texas2_results.xml");
+
+get_playoff_results($championship_teams[0], "results/2018_phoenix2_results.xml");
+get_playoff_results($championship_teams[1], "results/2018_phoenix2_results.xml");
+
+get_playoff_results($championship_teams[0], "results/2018_miami_results.xml");
+get_playoff_results($championship_teams[1], "results/2018_miami_results.xml");
+
 ?>
