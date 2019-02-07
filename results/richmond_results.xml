@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" charset="UTF-8" href="/xslt/nascar/race-v3.0.xsl"?>
+<!-- Generation started @ 2017-05-01 14:09:53 +0000 -->
+<race xmlns="http://feed.elasticstats.com/schema/nascar/race-v3.0.xsd" id="a3086395-de2c-49de-9097-b875cbc87975" name="Toyota Owners 400" status="closed" condition="normal" number="9" distance="300" laps="400" actual_distance="300.0" purse="0.0" laps_completed="400" avg_speed="93.685" victory_margin="0.775" elapsed_time="03:12:08" lead_changes="18" cautions="9" caution_laps="53" scheduled="2017-04-30T18:00:00+00:00" start_time="2017-04-30T18:00:00+00:00" end_time="2017-04-30T21:30:00+00:00">
+  <track name="Richmond International Raceway" distance="0.75" shape="Tri-Oval" banking="Turns:14;Backstretch:8;Frontstretch:2" frontstretch="1290" backstretch="860" seating="94063" id="734227a1-a32f-40bf-b174-0c0e7aa0d696"/>
+  <comments>
+    <![CDATA[]]>
+  </comments>
+  <flags>
+    <flag sequence="1" lap="-1" flag_state="noactiverun">
+    </flag>
+    <flag sequence="2" lap="0" flag_state="warmup">
+    </flag>
+    <flag sequence="3" lap="0" flag_state="warmup">
+    </flag>
+    <flag sequence="4" lap="0" flag_state="green">
+    </flag>
+    <flag sequence="5" lap="5" flag_state="yellow">
+      <comments>
+        <![CDATA[#77 Incident Turn 4]]>
+      </comments>
+    </flag>
+    <flag sequence="6" lap="11" flag_state="green">
+    </flag>
+    <flag sequence="7" lap="65" flag_state="yellow">
+      <comments>
+        <![CDATA[#17 Incident Turn 4]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[38]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="8" lap="71" flag_state="green">
+    </flag>
+    <flag sequence="9" lap="100" flag_state="yellow">
+      <comments>
+        <![CDATA[Stage 1 Conclusion]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[32]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="10" lap="109" flag_state="green">
+    </flag>
+    <flag sequence="11" lap="200" flag_state="yellow">
+      <comments>
+        <![CDATA[Stage 2 Conclusion]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[10]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="12" lap="210" flag_state="green">
+    </flag>
+    <flag sequence="13" lap="250" flag_state="yellow">
+      <comments>
+        <![CDATA[Debris On The Frontstretch]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[41]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="14" lap="255" flag_state="green">
+    </flag>
+    <flag sequence="15" lap="343" flag_state="yellow">
+      <comments>
+        <![CDATA[#88, 48 Incident Backstretch]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[14]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="16" lap="348" flag_state="green">
+    </flag>
+    <flag sequence="17" lap="356" flag_state="yellow">
+      <comments>
+        <![CDATA[#88 Incident Turn 3]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[48]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="18" lap="360" flag_state="green">
+    </flag>
+    <flag sequence="19" lap="366" flag_state="yellow">
+      <comments>
+        <![CDATA[Debris Turn 4]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[19]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="20" lap="370" flag_state="green">
+    </flag>
+    <flag sequence="21" lap="376" flag_state="yellow">
+      <comments>
+        <![CDATA[#41, 21 Incident Turn 3]]>
+      </comments>
+      <beneficiary>
+        <![CDATA[20]]>
+      </beneficiary>
+    </flag>
+    <flag sequence="22" lap="380" flag_state="green">
+    </flag>
+    <flag sequence="23" lap="399" flag_state="finish">
+    </flag>
+  </flags>
+  <results>
+    <result start_position="5" position="1" status="running" driver_rating="108.6" pit_stops="11" best_lap="385" best_lap_speed="118.525" best_lap_time="22.78" elapsed_time="11527.171" fastest_laps="13" avg_position="10.865" avg_speed="93.692" passes_made="93" quality_passes="37" times_passed="61" passing_differential="32" last_lap_speed="112.9" last_lap_time="23.915" avg_restart_speed="113.326" points="42" bonus_points="2" penalty_points="0" stage_1_points="1" stage_2_points="1" money="0.0" laps_led="25" times_led="2" laps_completed="400">
+      <car number="22" sponsors="Shell-Pennzoil/AAA/AutoTrader.com/Duralast" crew_chief="Todd Gordon" id="23a4be38-3039-4757-94f5-b4e478e4d7f8">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="03246399-5e63-4c21-9c5f-24074e3bf515" name="Walter Czarnecki"/>
+        <team id="e337709c-9fb6-4275-ad89-d9c100e71a1d" name="Team Penske">
+          <owner id="57198af5-d912-4efc-9135-95fc6c0a3fc5" name="Roger Penske"/>
+        </team>
+      </car>
+      <driver first_name="Joey" last_name="Logano" full_name="Joey Logano" points_eligible="true" id="894b273e-ce7d-446c-9ab0-d9a474ce9d7f"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="7" positions_gained="1" in_time="206.203" out_time="247.024"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="4" in_time="1853.657" out_time="1894.427"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="0" in_time="3020.838" out_time="3062.555"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="1" in_time="5862.66" out_time="5904.141"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="-3" in_time="7225.367" out_time="7267.949"/>
+        <pit-stop sequence="7" lap="314" leader_lap="315" positions_gained="0" in_time="8901.299" out_time="8943.918"/>
+        <pit-stop sequence="8" lap="344" leader_lap="344" positions_gained="0" in_time="9692.715" out_time="9733.58"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="0" in_time="10173.839" out_time="10214.52"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10893.134" out_time="10934.217"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11610.316" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="371" end_lap="378"/>
+        <lead sequence="2" start_lap="384" end_lap="400"/>
+      </laps-led>
+    </result>
+    <result start_position="15" position="2" status="running" driver_rating="130.7" pit_stops="11" best_lap="363" best_lap_speed="118.385" best_lap_time="22.807" elapsed_time="11527.946" fastest_laps="100" avg_position="4.275" avg_speed="93.685" passes_made="77" quality_passes="58" times_passed="48" passing_differential="29" last_lap_speed="112.73" last_lap_time="23.951" avg_restart_speed="114.371" points="50" bonus_points="15" penalty_points="0" stage_1_points="5" stage_2_points="10" money="0.0" stage_2_win="true" laps_led="110" times_led="6" laps_completed="400">
+      <car number="2" sponsors="Miller Lite/Alliance Truck Parts/Wurth/AutoTrader.com/SKF/Snap-on/Fitzgerald Glider Kits" crew_chief="Paul Wolfe" id="3d0cf0c8-f933-48ac-a935-71f1d18d4bd5">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="3a02ed9a-855e-446a-b71b-876861b84f60" name="Roger Penske"/>
+        <team id="e337709c-9fb6-4275-ad89-d9c100e71a1d" name="Team Penske">
+          <owner id="57198af5-d912-4efc-9135-95fc6c0a3fc5" name="Roger Penske"/>
+        </team>
+      </car>
+      <driver first_name="Brad" last_name="Keselowski" full_name="Brad Keselowski" points_eligible="true" id="0ce4113d-34c8-4272-b658-3b929238dbd3"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="1" in_time="200.251" out_time="241.852"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="0" in_time="1846.65" out_time="1887.752"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3019.306" out_time="3060.153"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="-2" in_time="5857.701" out_time="5901.808"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="-1" in_time="7223.203" out_time="7264.733"/>
+        <pit-stop sequence="7" lap="319" leader_lap="319" positions_gained="0" in_time="9018.19" out_time="9060.491"/>
+        <pit-stop sequence="8" lap="344" leader_lap="344" positions_gained="1" in_time="9688.431" out_time="9729.904"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="0" in_time="10172.355" out_time="10213.112"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10893.865" out_time="10935.446"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11552.482" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="164" end_lap="204"/>
+        <lead sequence="2" start_lap="238" end_lap="251"/>
+        <lead sequence="3" start_lap="287" end_lap="319"/>
+        <lead sequence="4" start_lap="346" end_lap="357"/>
+        <lead sequence="5" start_lap="359" end_lap="360"/>
+        <lead sequence="6" start_lap="363" end_lap="370"/>
+      </laps-led>
+    </result>
+    <result start_position="16" position="3" status="running" driver_rating="117.3" pit_stops="11" best_lap="258" best_lap_speed="117.228" best_lap_time="23.032" elapsed_time="11529.666" fastest_laps="30" avg_position="5.478" avg_speed="93.671" passes_made="54" quality_passes="46" times_passed="47" passing_differential="7" last_lap_speed="112.523" last_lap_time="23.995" avg_restart_speed="114.16" points="47" bonus_points="13" penalty_points="0" stage_1_points="6" stage_2_points="7" money="0.0" laps_led="59" times_led="3" laps_completed="400">
+      <car number="11" sponsors="FedEx/Sport Clips/Hisense" crew_chief="Mike Wheeler" id="a4fca4d9-9ffa-4b72-8673-f851f6fd9677">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="1ddb24a4-3c7e-4ea5-a5e3-cfb8d405336e" name="J.D. Gibbs"/>
+        <team id="b30dee06-c437-4e76-8b9c-8b850d52ce21" name="Joe Gibbs Racing">
+        </team>
+      </car>
+      <driver first_name="Denny" last_name="Hamlin" full_name="Denny Hamlin" points_eligible="true" id="cb9d6f49-0044-4305-be9a-22d428e52c95"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="-2" in_time="1849.429" out_time="1891.966"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="-1" in_time="3018.928" out_time="3060.4"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="3" in_time="5860.055" out_time="5900.09"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="2" in_time="7223.994" out_time="7264.205"/>
+        <pit-stop sequence="6" lap="318" leader_lap="318" positions_gained="0" in_time="8995.86" out_time="9036.253"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="1" in_time="9690.894" out_time="9731.042"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="2" in_time="10173.51" out_time="10213.423"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="0" in_time="10542.106" out_time="10582.502"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10894.371" out_time="10936.198"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11554.506" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="206" end_lap="228"/>
+        <lead sequence="2" start_lap="253" end_lap="286"/>
+        <lead sequence="3" start_lap="361" end_lap="362"/>
+      </laps-led>
+    </result>
+    <result start_position="4" position="4" status="running" driver_rating="88.6" pit_stops="12" best_lap="2" best_lap_speed="116.409" best_lap_time="23.194" elapsed_time="11533.608" fastest_laps="5" avg_position="14.862" avg_speed="93.639" passes_made="82" quality_passes="37" times_passed="61" passing_differential="21" last_lap_speed="111.672" last_lap_time="24.178" avg_restart_speed="112.462" points="33" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="17" sponsors="Fastenal/Fifth Third Bank/Sunny D/Go Bowling " crew_chief="Brian Pattie" id="a7fc0b6d-da2f-4cb6-9f7d-154e5351d788">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="4788307e-e269-4409-8fae-bbda98214196" name="Jack Roush"/>
+        <team id="69cd5f7e-cb9d-46c0-a2c3-c1dde01969ee" name="Roush Fenway Racing">
+        </team>
+      </car>
+      <driver first_name="Ricky" last_name="Stenhouse" full_name="Ricky Stenhouse Jr" points_eligible="true" id="0cdae85e-0b1d-44d7-9614-a49aff66aeb5"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="-17" in_time="1851.327" out_time="1914.865"/>
+        <pit-stop sequence="3" lap="68" leader_lap="69" positions_gained="0" in_time="1981.393" out_time="2039.23"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="0" in_time="3028.208" out_time="3098.112"/>
+        <pit-stop sequence="5" lap="106" leader_lap="107" positions_gained="0" in_time="3214.195" out_time="3262.378"/>
+        <pit-stop sequence="6" lap="204" leader_lap="204" positions_gained="0" in_time="5863.983" out_time="5906.098"/>
+        <pit-stop sequence="7" lap="251" leader_lap="251" positions_gained="-10" in_time="7227.149" out_time="7275.216"/>
+        <pit-stop sequence="8" lap="318" leader_lap="319" positions_gained="0" in_time="9006.075" out_time="9048.178"/>
+        <pit-stop sequence="9" lap="344" leader_lap="344" positions_gained="0" in_time="9695.803" out_time="9738.436"/>
+        <pit-stop sequence="10" lap="357" leader_lap="357" positions_gained="1" in_time="10177.007" out_time="10218.745"/>
+        <pit-stop sequence="11" lap="367" leader_lap="367" positions_gained="-3" in_time="10545.755" out_time="10589.046"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11558.106" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="6" position="5" status="running" driver_rating="121.9" pit_stops="11" best_lap="4" best_lap_speed="116.863" best_lap_time="23.104" elapsed_time="11533.673" fastest_laps="29" avg_position="3.648" avg_speed="93.639" passes_made="41" quality_passes="36" times_passed="37" passing_differential="4" last_lap_speed="111.723" last_lap_time="24.167" avg_restart_speed="114.047" points="47" bonus_points="15" penalty_points="0" stage_1_points="7" stage_2_points="8" money="0.0" laps_led="11" times_led="3" laps_completed="400">
+      <car number="4" sponsors="Busch Beer/Jimmy Johns/Mobil 1" crew_chief="Rodney Childers" id="6713b606-f0b9-4b23-bcf3-9f2e4e9a91a7">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="f605ad11-b0a3-423b-a1f0-220cfa224968" name="Tony Stewart"/>
+        <team id="876a07ff-ff53-4f23-9528-6d9795270244" name="Stewart Haas Racing">
+          <owner id="160c7b9e-b198-4b4d-9000-bcdc1a094cee" name="Tony Stewart"/>
+        </team>
+      </car>
+      <driver first_name="Kevin" last_name="Harvick" full_name="Kevin Harvick" points_eligible="true" id="9d18716c-fd73-48d4-b3da-44228c767b84"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="0" in_time="1848.559" out_time="1889.19"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="0" in_time="3018.558" out_time="3059.132"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="1" in_time="5859.684" out_time="5901.268"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="-1" in_time="7223.599" out_time="7265.204"/>
+        <pit-stop sequence="6" lap="318" leader_lap="318" positions_gained="0" in_time="8995.014" out_time="9035.865"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="-1" in_time="9690.508" out_time="9731.192"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="-2" in_time="10174.622" out_time="10217.312"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="1" in_time="10543.631" out_time="10584.147"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10896.285" out_time="10937.173"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11559.743" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="229" end_lap="237"/>
+        <lead sequence="2" start_lap="252" end_lap="252"/>
+        <lead sequence="3" start_lap="345" end_lap="345"/>
+      </laps-led>
+    </result>
+    <result start_position="10" position="6" status="running" driver_rating="101.0" pit_stops="11" best_lap="373" best_lap_speed="116.204" best_lap_time="23.235" elapsed_time="11533.956" fastest_laps="4" avg_position="8.385" avg_speed="93.637" passes_made="78" quality_passes="59" times_passed="78" passing_differential="0" last_lap_speed="111.203" last_lap_time="24.28" avg_restart_speed="113.387" points="38" bonus_points="7" penalty_points="0" stage_1_points="3" stage_2_points="4" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="1" sponsors="McDonald's/Cessna/GearWrench/Credit One Bank/t Sherwin-Williams Emerald/Bass Pro Shops" crew_chief="Matt McCall" id="3cc7ae07-4ec7-4d14-8cdf-59557055db30">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="f37e2acb-0f47-498f-8a3c-d2aef410cdc7" name="Felix Sabates"/>
+        <team id="e9897fd1-8187-4930-814d-5d05cd43d198" name="Chip Ganassi Racing">
+        </team>
+      </car>
+      <driver first_name="Jamie" last_name="McMurray" full_name="Jamie McMurray" points_eligible="true" id="f8d8ff36-bfcf-4d98-8eb2-353f1e8d3c34"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="2" in_time="1854.625" out_time="1896.786"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="-1" in_time="3020.048" out_time="3062.347"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="0" in_time="5861.406" out_time="5902.987"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7224.664" out_time="7265.514"/>
+        <pit-stop sequence="6" lap="317" leader_lap="318" positions_gained="0" in_time="8973.133" out_time="9015.193"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="0" in_time="9692.406" out_time="9733.492"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="2" in_time="10175.036" out_time="10215.835"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="-1" in_time="10544.053" out_time="10585.084"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10895.807" out_time="10937.159"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11561.794" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="13" position="7" status="running" driver_rating="94.7" pit_stops="10" best_lap="3" best_lap_speed="115.572" best_lap_time="23.362" elapsed_time="11535.125" fastest_laps="7" avg_position="8.745" avg_speed="93.627" passes_made="65" quality_passes="59" times_passed="52" passing_differential="13" last_lap_speed="112.075" last_lap_time="24.091" avg_restart_speed="113.075" points="39" bonus_points="9" penalty_points="0" stage_1_points="4" stage_2_points="5" money="0.0" laps_led="25" times_led="1" laps_completed="400">
+      <car number="31" sponsors="Caterpillar/Grainger/Chevrolet.Kalahari Resorts &amp; Conventions" crew_chief="Luke Lambert" id="c2351769-a323-4eba-8553-ff34d122ffae">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="b28b1f53-bdee-4c44-97fb-bb1fd0ea4a8b" name="Richard Childress"/>
+        <team id="ffd3ba10-57f2-4bb8-9aaf-7c64b1ba793a" name="Richard Childress Racing">
+          <owner id="84e3b257-75b1-40ef-8774-cfb53fab90e9" name="Richard Childress"/>
+        </team>
+      </car>
+      <driver first_name="Ryan" last_name="Newman" full_name="Ryan Newman" points_eligible="true" id="2e6f5ea3-ea6e-48d2-85ec-2e89c2fa02b4"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="-1" in_time="1848.969" out_time="1891.116"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="-1" in_time="3019.657" out_time="3062.33"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="-2" in_time="5860.938" out_time="5903.322"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7226.06" out_time="7267.323"/>
+        <pit-stop sequence="6" lap="344" leader_lap="344" positions_gained="-1" in_time="9687.878" out_time="9730.415"/>
+        <pit-stop sequence="7" lap="357" leader_lap="357" positions_gained="-1" in_time="10172.741" out_time="10213.932"/>
+        <pit-stop sequence="8" lap="367" leader_lap="367" positions_gained="-2" in_time="10543.28" out_time="10584.445"/>
+        <pit-stop sequence="9" lap="377" leader_lap="377" positions_gained="1" in_time="10896.928" out_time="10938.102"/>
+        <pit-stop sequence="10" lap="400" leader_lap="400" positions_gained="0" in_time="11562.856" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="320" end_lap="344"/>
+      </laps-led>
+    </result>
+    <result start_position="9" position="8" status="running" driver_rating="78.1" pit_stops="12" best_lap="3" best_lap_speed="116.339" best_lap_time="23.208" elapsed_time="11535.257" fastest_laps="1" avg_position="18.172" avg_speed="93.626" passes_made="120" quality_passes="37" times_passed="125" passing_differential="-5" last_lap_speed="111.741" last_lap_time="24.163" avg_restart_speed="112.67" points="29" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="41" sponsors="Monster Energy/Haas Automation/Mobil 1" crew_chief="Tony Gibson" id="ebb590f6-49ac-4bcd-a06c-9b8f7e38b5a8">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="1c6be062-998b-4846-87d0-11eebfe766d8" name="Gene Haas"/>
+        <team id="876a07ff-ff53-4f23-9528-6d9795270244" name="Stewart Haas Racing">
+          <owner id="160c7b9e-b198-4b4d-9000-bcdc1a094cee" name="Tony Stewart"/>
+        </team>
+      </car>
+      <driver first_name="Kurt" last_name="Busch" full_name="Kurt Busch" points_eligible="true" id="8e76a45f-596e-4b56-9eb6-0623e45bf89c"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="5" in_time="1859.001" out_time="1900.143"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="1" in_time="3024.719" out_time="3066.772"/>
+        <pit-stop sequence="4" lap="204" leader_lap="205" positions_gained="-2" in_time="5915.367" out_time="5961.723"/>
+        <pit-stop sequence="5" lap="252" leader_lap="253" positions_gained="0" in_time="7302.854" out_time="7349.625"/>
+        <pit-stop sequence="6" lap="317" leader_lap="318" positions_gained="0" in_time="8979.472" out_time="9020.21"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="0" in_time="9694.573" out_time="9735.796"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="2" in_time="10176.341" out_time="10217.742"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="0" in_time="10544.565" out_time="10585.452"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="1" in_time="10897.294" out_time="10938.485"/>
+        <pit-stop sequence="11" lap="378" leader_lap="378" positions_gained="0" in_time="10938.485" out_time="0.0"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11564.275" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="25" position="9" status="running" driver_rating="84.0" pit_stops="12" best_lap="375" best_lap_speed="115.557" best_lap_time="23.365" elapsed_time="11535.751" fastest_laps="3" avg_position="15.455" avg_speed="93.622" passes_made="98" quality_passes="41" times_passed="93" passing_differential="5" last_lap_speed="111.857" last_lap_time="24.138" avg_restart_speed="112.283" points="28" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="43" sponsors="Smithfield Foods/U.S. Air Force/STP/Fresh From Florida/Waffle House" crew_chief="Drew Blickensderfer" id="e6fd7d08-83bc-4f2a-8c0b-e5c3cac57ab7">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="1d488f0e-334f-464e-a3db-ae3c8bc028e9" name="Richard Petty"/>
+        <team id="ee6a924b-58f4-40ea-8514-610936e32e78" name="Richard Petty Motorsports">
+          <owner id="23972c17-6476-4824-aeb2-43896e2082d9" name="Richard Petty"/>
+        </team>
+      </car>
+      <driver first_name="Aric" last_name="Almirola" full_name="Aric Almirola" points_eligible="true" id="e128a081-a2e8-4809-8038-8c936049bf7c"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="2" in_time="202.198" out_time="243.51"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="1" in_time="1853.276" out_time="1896.016"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3021.554" out_time="3063.171"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="1" in_time="5866.189" out_time="5908.706"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="2" in_time="7228.186" out_time="7269.648"/>
+        <pit-stop sequence="7" lap="317" leader_lap="318" positions_gained="0" in_time="8980.272" out_time="9023.094"/>
+        <pit-stop sequence="8" lap="324" leader_lap="325" positions_gained="0" in_time="9181.37" out_time="9207.431"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="2" in_time="10181.293" out_time="10224.1"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="3" in_time="10546.304" out_time="10587.889"/>
+        <pit-stop sequence="11" lap="377" leader_lap="377" positions_gained="0" in_time="10897.937" out_time="10939.207"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11568.811" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="3" position="10" status="running" driver_rating="102.8" pit_stops="10" best_lap="3" best_lap_speed="117.878" best_lap_time="22.905" elapsed_time="11537.461" fastest_laps="10" avg_position="7.138" avg_speed="93.608" passes_made="62" quality_passes="37" times_passed="72" passing_differential="-10" last_lap_speed="110.942" last_lap_time="24.337" avg_restart_speed="113.561" points="35" bonus_points="8" penalty_points="0" stage_1_points="8" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="78" sponsors="Furniture Row/Denver Mattress/Bass Pro Shops/Auto-Owners Insurance/5-Hour Energy/WIX Filters" crew_chief="Cole Pearn" id="28df646d-1617-44a2-bed2-b138260d3240">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="58a2e724-ba23-47ae-b1a3-3314ce83f3bc" name="Barney Visser"/>
+        <team id="7e4712e1-9276-4f32-b648-79fc4fa42e7f" name="Furniture Row Motorsports">
+        </team>
+      </car>
+      <driver first_name="Martin" last_name="Truex" full_name="Martin Truex Jr" points_eligible="true" id="4d95ef3a-46cc-43c2-b340-c92cea2ed7f8"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="0" in_time="1846.282" out_time="1887.616"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="0" in_time="3018.146" out_time="3059.084"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="0" in_time="5863.027" out_time="5905.443"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7225.74" out_time="7266.987"/>
+        <pit-stop sequence="6" lap="315" leader_lap="316" positions_gained="0" in_time="8928.873" out_time="8970.291"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="1" in_time="9693.813" out_time="9734.461"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="2" in_time="10175.677" out_time="10216.587"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="2" in_time="10544.423" out_time="10584.434"/>
+        <pit-stop sequence="10" lap="400" leader_lap="400" positions_gained="0" in_time="11566.469" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="17" position="11" status="running" driver_rating="83.1" pit_stops="12" best_lap="384" best_lap_speed="115.726" best_lap_time="23.331" elapsed_time="11537.741" fastest_laps="6" avg_position="14.702" avg_speed="93.606" passes_made="96" quality_passes="57" times_passed="74" passing_differential="22" last_lap_speed="111.262" last_lap_time="24.267" avg_restart_speed="112.343" points="26" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="48" sponsors="Lowe's Home Improvement/Kobalt Tools" crew_chief="Chad Knaus" id="733d54fb-e4f5-4829-bc2a-94af6c9c6504">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="492ef62b-a861-4672-9940-0ec3133e04f1" name="Jeff Gordon"/>
+        <team id="8427da4c-9c88-4849-9242-0c184d5ed67c" name="Hendrick Motorsports">
+          <owner id="df3acab4-1712-44bb-b913-897b4e20fd50" name="Rick Hendrick"/>
+        </team>
+      </car>
+      <driver first_name="Jimmie" last_name="Johnson" full_name="Jimmie Johnson" points_eligible="true" id="057da6c6-ad81-4c65-b6b1-64b6da9e2ee7"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="-2" in_time="1852.484" out_time="1896.594"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="-5" in_time="3022.025" out_time="3066.216"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="-2" in_time="5863.491" out_time="5906.338"/>
+        <pit-stop sequence="5" lap="206" leader_lap="206" positions_gained="0" in_time="5984.308" out_time="6034.793"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="3" in_time="7230.197" out_time="7272.015"/>
+        <pit-stop sequence="7" lap="334" leader_lap="334" positions_gained="0" in_time="9405.645" out_time="9446.886"/>
+        <pit-stop sequence="8" lap="344" leader_lap="345" positions_gained="-3" in_time="9746.176" out_time="9823.338"/>
+        <pit-stop sequence="9" lap="358" leader_lap="358" positions_gained="0" in_time="10235.317" out_time="10291.456"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="1" in_time="10548.374" out_time="10590.009"/>
+        <pit-stop sequence="11" lap="377" leader_lap="377" positions_gained="0" in_time="10898.45" out_time="10940.269"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11570.5" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="11" position="12" status="running" driver_rating="61.6" pit_stops="9" best_lap="3" best_lap_speed="116.264" best_lap_time="23.223" elapsed_time="11538.074" fastest_laps="14" avg_position="28.155" avg_speed="93.603" passes_made="43" quality_passes="7" times_passed="47" passing_differential="-4" last_lap_speed="110.942" last_lap_time="24.337" avg_restart_speed="112.014" points="25" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="19" sponsors="ARRIS/Stanley/Subway/Juniper" crew_chief="Scott Graves" id="1e8fcd69-e12e-4fb4-8dff-8b7ec56f3e3f">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="1ddb24a4-3c7e-4ea5-a5e3-cfb8d405336e" name="J.D. Gibbs"/>
+        <team id="b30dee06-c437-4e76-8b9c-8b850d52ce21" name="Joe Gibbs Racing">
+        </team>
+      </car>
+      <driver first_name="Daniel" last_name="Suarez" full_name="Daniel Suarez" points_eligible="true" id="ebd0a08d-5308-442e-a2ae-2e40aafb3100"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="1" in_time="1904.302" out_time="1946.912"/>
+        <pit-stop sequence="3" lap="103" leader_lap="104" positions_gained="0" in_time="3078.062" out_time="3120.104"/>
+        <pit-stop sequence="4" lap="203" leader_lap="205" positions_gained="0" in_time="5915.746" out_time="5958.412"/>
+        <pit-stop sequence="5" lap="289" leader_lap="292" positions_gained="0" in_time="8332.218" out_time="8374.908"/>
+        <pit-stop sequence="6" lap="336" leader_lap="339" positions_gained="0" in_time="9516.766" out_time="9557.603"/>
+        <pit-stop sequence="7" lap="366" leader_lap="367" positions_gained="0" in_time="10550.91" out_time="10592.415"/>
+        <pit-stop sequence="8" lap="377" leader_lap="377" positions_gained="2" in_time="10903.389" out_time="10944.466"/>
+        <pit-stop sequence="9" lap="400" leader_lap="400" positions_gained="0" in_time="11570.923" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="29" position="13" status="running" driver_rating="67.7" pit_stops="11" best_lap="389" best_lap_speed="114.591" best_lap_time="23.562" elapsed_time="11538.245" fastest_laps="0" avg_position="19.33" avg_speed="93.602" passes_made="97" quality_passes="18" times_passed="102" passing_differential="-5" last_lap_speed="111.075" last_lap_time="24.308" avg_restart_speed="111.917" points="24" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="6" sponsors="AdvoCare/Liberty National Life Insurance Company/Performance Plus Oil" crew_chief="Matt Puccia" id="698eee4f-6812-47b1-9940-62e2afc50143">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="b8e569e0-a3cf-48ee-bd7b-52a2ba1ff1d9" name="John Henry"/>
+        <team id="69cd5f7e-cb9d-46c0-a2c3-c1dde01969ee" name="Roush Fenway Racing">
+        </team>
+      </car>
+      <driver first_name="Trevor" last_name="Bayne" full_name="Trevor Bayne" points_eligible="true" id="dde7052f-25f0-4e9e-9779-6bc2943bac99"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="1" in_time="1857.667" out_time="1900.342"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="0" in_time="3023.532" out_time="3065.78"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="0" in_time="5867.666" out_time="5916.361"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="1" in_time="7230.684" out_time="7273.329"/>
+        <pit-stop sequence="6" lap="317" leader_lap="318" positions_gained="0" in_time="8986.153" out_time="9029.954"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="1" in_time="9698.16" out_time="9740.378"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="0" in_time="10177.373" out_time="10222.262"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="1" in_time="10545.853" out_time="10587.906"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="-1" in_time="10898.743" out_time="10940.998"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11571.758" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="18" position="14" status="running" driver_rating="95.4" pit_stops="11" best_lap="383" best_lap_speed="116.883" best_lap_time="23.1" elapsed_time="11538.844" fastest_laps="12" avg_position="7.648" avg_speed="93.597" passes_made="75" quality_passes="47" times_passed="73" passing_differential="2" last_lap_speed="109.926" last_lap_time="24.562" avg_restart_speed="114.057" points="38" bonus_points="15" penalty_points="0" stage_1_points="9" stage_2_points="6" money="0.0" laps_led="5" times_led="1" laps_completed="400">
+      <car number="42" sponsors="Target/CreditOne Bank" crew_chief="Chad Johnston" id="1dbd3173-2412-48e7-bf44-cca9a72fc127">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="beaaedde-491d-4a5e-a449-36f7d6383588" name="Chip Ganassi"/>
+        <team id="e9897fd1-8187-4930-814d-5d05cd43d198" name="Chip Ganassi Racing">
+        </team>
+      </car>
+      <driver first_name="Kyle" last_name="Larson" full_name="Kyle Larson" points_eligible="true" id="a756eefd-801d-4214-ab1b-0b595c21c37d"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="-5" in_time="198.84" out_time="245.557"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="1" in_time="1850.306" out_time="1891.963"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="0" in_time="3017.774" out_time="3058.799"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="0" in_time="5860.447" out_time="5902.189"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="3" in_time="7226.391" out_time="7266.564"/>
+        <pit-stop sequence="7" lap="319" leader_lap="319" positions_gained="0" in_time="9026.181" out_time="9067.657"/>
+        <pit-stop sequence="8" lap="344" leader_lap="344" positions_gained="1" in_time="9693.438" out_time="9734.359"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="4" in_time="10176.009" out_time="10216.315"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="0" in_time="10542.856" out_time="10583.657"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11573.452" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="379" end_lap="383"/>
+      </laps-led>
+    </result>
+    <result start_position="8" position="15" status="running" driver_rating="92.0" pit_stops="12" best_lap="213" best_lap_speed="116.364" best_lap_time="23.203" elapsed_time="11539.057" fastest_laps="6" avg_position="10.03" avg_speed="93.595" passes_made="64" quality_passes="30" times_passed="76" passing_differential="-12" last_lap_speed="111.547" last_lap_time="24.205" avg_restart_speed="113.015" points="27" bonus_points="5" penalty_points="0" stage_1_points="2" stage_2_points="3" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="14" sponsors="Mobil 1/Rush Truck Centers" crew_chief="Mike Bugarewicz" id="833f8004-3392-49e4-8ef9-44158a7dc92c">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="975fb88e-0122-4923-8720-24e60dfb65b3" name="Margaret Haas"/>
+        <team id="876a07ff-ff53-4f23-9528-6d9795270244" name="Stewart Haas Racing">
+          <owner id="160c7b9e-b198-4b4d-9000-bcdc1a094cee" name="Tony Stewart"/>
+        </team>
+      </car>
+      <driver first_name="Clint" last_name="Bowyer" full_name="Clint Bowyer" points_eligible="true" id="bcf5b54b-bbbe-4653-aade-a7364e946056"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="1" in_time="1851.886" out_time="1892.935"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="2" in_time="3020.485" out_time="3061.492"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="2" in_time="5861.904" out_time="5902.783"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7225.012" out_time="7266.007"/>
+        <pit-stop sequence="6" lap="318" leader_lap="319" positions_gained="0" in_time="9001.519" out_time="9040.219"/>
+        <pit-stop sequence="7" lap="322" leader_lap="323" positions_gained="0" in_time="9127.572" out_time="9153.611"/>
+        <pit-stop sequence="8" lap="345" leader_lap="345" positions_gained="1" in_time="9758.617" out_time="9806.103"/>
+        <pit-stop sequence="9" lap="357" leader_lap="358" positions_gained="1" in_time="10189.61" out_time="10238.68"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="-6" in_time="10548.924" out_time="10614.183"/>
+        <pit-stop sequence="11" lap="377" leader_lap="377" positions_gained="0" in_time="10901.684" out_time="10942.115"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11572.961" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="7" position="16" status="running" driver_rating="86.0" pit_stops="11" best_lap="3" best_lap_speed="117.427" best_lap_time="22.993" elapsed_time="11539.212" fastest_laps="9" avg_position="10.848" avg_speed="93.594" passes_made="90" quality_passes="35" times_passed="58" passing_differential="32" last_lap_speed="111.152" last_lap_time="24.291" avg_restart_speed="113.368" points="21" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="1" times_led="1" laps_completed="400">
+      <car number="18" sponsors="M&amp;M's/Skittles/Interstate Batteries/Snickers" crew_chief="Adam Stevens" id="17765fdf-5d63-4795-80ae-9149c91729c4">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="e7846c1b-f64e-4312-8ee3-13c8a0001a8b" name="Joe Gibbs"/>
+        <team id="b30dee06-c437-4e76-8b9c-8b850d52ce21" name="Joe Gibbs Racing">
+        </team>
+      </car>
+      <driver first_name="Kyle" last_name="Busch" full_name="Kyle Busch" points_eligible="true" id="85c06960-3610-4eff-9ef2-18641b84c952"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="0" in_time="1847.896" out_time="1888.49"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="2" in_time="3023.909" out_time="3065.097"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="2" in_time="5864.436" out_time="5905.899"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7226.82" out_time="7268.334"/>
+        <pit-stop sequence="6" lap="316" leader_lap="317" positions_gained="0" in_time="8949.899" out_time="8990.312"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="0" in_time="9691.922" out_time="9732.447"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="-1" in_time="10173.056" out_time="10214.341"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="0" in_time="10541.514" out_time="10581.691"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="0" in_time="10893.446" out_time="10934.892"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11565.37" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="358" end_lap="358"/>
+      </laps-led>
+    </result>
+    <result start_position="23" position="17" status="running" driver_rating="63.7" pit_stops="12" best_lap="4" best_lap_speed="115.021" best_lap_time="23.474" elapsed_time="11539.507" fastest_laps="0" avg_position="20.185" avg_speed="93.592" passes_made="106" quality_passes="5" times_passed="106" passing_differential="0" last_lap_speed="109.281" last_lap_time="24.707" avg_restart_speed="111.748" points="20" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="37" sponsors="Cottonelle/Bush's Baked Beans/Scott Products/Kingsford/Kroger/Natural Light" crew_chief="Trent Owens" id="6a4b77bf-0f1a-45a3-ba5c-2b1e8c51a354">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="db238547-f8d4-4999-9614-0e808d83d766" name="Tad Geschickter"/>
+        <team id="fb3e4d03-9408-43c6-b65f-61a2399a146d" name="JTG Daugherty Racing">
+        </team>
+      </car>
+      <driver first_name="Chris" last_name="Buescher" full_name="Chris Buescher" points_eligible="true" id="25cfebb6-24e5-429c-a9db-c276bab0e228"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="0" in_time="201.691" out_time="243.783"/>
+        <pit-stop sequence="3" lap="7" leader_lap="7" positions_gained="0" in_time="243.783" out_time="0.0"/>
+        <pit-stop sequence="4" lap="66" leader_lap="66" positions_gained="3" in_time="1855.825" out_time="1897.861"/>
+        <pit-stop sequence="5" lap="103" leader_lap="103" positions_gained="1" in_time="3026.579" out_time="3070.236"/>
+        <pit-stop sequence="6" lap="204" leader_lap="204" positions_gained="-1" in_time="5866.626" out_time="5910.36"/>
+        <pit-stop sequence="7" lap="251" leader_lap="251" positions_gained="1" in_time="7229.842" out_time="7272.768"/>
+        <pit-stop sequence="8" lap="318" leader_lap="319" positions_gained="0" in_time="9012.359" out_time="9055.641"/>
+        <pit-stop sequence="9" lap="344" leader_lap="344" positions_gained="2" in_time="9700.207" out_time="9744.301"/>
+        <pit-stop sequence="10" lap="357" leader_lap="357" positions_gained="-2" in_time="10178.871" out_time="10225.929"/>
+        <pit-stop sequence="11" lap="367" leader_lap="367" positions_gained="-2" in_time="10547.711" out_time="10590.859"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11574.742" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="21" position="18" status="running" driver_rating="56.9" pit_stops="12" best_lap="2" best_lap_speed="115.217" best_lap_time="23.434" elapsed_time="11539.702" fastest_laps="0" avg_position="22.868" avg_speed="93.59" passes_made="128" quality_passes="7" times_passed="131" passing_differential="-3" last_lap_speed="110.344" last_lap_time="24.469" avg_restart_speed="111.959" points="19" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="10" sponsors="Aspen Dental/TaxACT/Mobil1/Code 3 Associates" crew_chief="Billy Scott" id="2e3b8a4c-5c1c-401d-98b2-7c92bcab23e5">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="f605ad11-b0a3-423b-a1f0-220cfa224968" name="Tony Stewart"/>
+        <team id="876a07ff-ff53-4f23-9528-6d9795270244" name="Stewart Haas Racing">
+          <owner id="160c7b9e-b198-4b4d-9000-bcdc1a094cee" name="Tony Stewart"/>
+        </team>
+      </car>
+      <driver first_name="Danica" last_name="Patrick" full_name="Danica Patrick" points_eligible="true" id="262c7b0f-fab8-4d5e-854c-7d54d039b994"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="1" in_time="200.646" out_time="242.483"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="1" in_time="1856.767" out_time="1898.617"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3026.196" out_time="3069.027"/>
+        <pit-stop sequence="5" lap="205" leader_lap="205" positions_gained="0" in_time="5920.716" out_time="5977.792"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="0" in_time="7233.278" out_time="7279.895"/>
+        <pit-stop sequence="7" lap="320" leader_lap="321" positions_gained="0" in_time="9063.394" out_time="9105.347"/>
+        <pit-stop sequence="8" lap="321" leader_lap="323" positions_gained="0" in_time="9120.9" out_time="9147.278"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="0" in_time="10181.947" out_time="10226.768"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="1" in_time="10547.918" out_time="10589.657"/>
+        <pit-stop sequence="11" lap="377" leader_lap="377" positions_gained="2" in_time="10899.565" out_time="10940.454"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11577.015" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="30" position="19" status="running" driver_rating="52.0" pit_stops="8" best_lap="4" best_lap_speed="114.552" best_lap_time="23.57" elapsed_time="11539.9" fastest_laps="0" avg_position="25.412" avg_speed="93.588" passes_made="85" quality_passes="3" times_passed="110" passing_differential="-25" last_lap_speed="110.529" last_lap_time="24.428" avg_restart_speed="111.485" points="18" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="38" sponsors="Camping World/Good Sam/Jacob/Juice Battery" crew_chief="Derrick Finley" id="122dc137-45ec-41a0-9cf4-c447c34330b4">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="69e98f6f-ffa3-4b40-832a-33b262151bba" name="Brad Jenkins"/>
+        <team id="bd38dfec-bb97-4f29-b032-cc6f0c77dfe6" name="Front Row Motorsports">
+        </team>
+      </car>
+      <driver first_name="David" last_name="Ragan" full_name="David Ragan" points_eligible="true" id="25884070-3ded-4fdc-9370-d09428ac95e4"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="67" leader_lap="67" positions_gained="1" in_time="1912.924" out_time="1960.193"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="1" in_time="3027.011" out_time="3072.445"/>
+        <pit-stop sequence="4" lap="204" leader_lap="205" positions_gained="-2" in_time="5916.079" out_time="5962.502"/>
+        <pit-stop sequence="5" lap="251" leader_lap="252" positions_gained="0" in_time="7282.435" out_time="7324.711"/>
+        <pit-stop sequence="6" lap="344" leader_lap="345" positions_gained="1" in_time="9750.011" out_time="9796.384"/>
+        <pit-stop sequence="7" lap="367" leader_lap="367" positions_gained="-1" in_time="10550.18" out_time="10599.295"/>
+        <pit-stop sequence="8" lap="400" leader_lap="400" positions_gained="0" in_time="11575.668" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="38" position="20" status="running" driver_rating="65.7" pit_stops="11" best_lap="386" best_lap_speed="115.424" best_lap_time="23.392" elapsed_time="11540.367" fastest_laps="0" avg_position="19.37" avg_speed="93.585" passes_made="105" quality_passes="20" times_passed="92" passing_differential="13" last_lap_speed="111.203" last_lap_time="24.28" avg_restart_speed="111.765" points="17" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="3" sponsors="Dow Chemical/American Ethanol/Bass Pro Shops/AAA/Quikrete/New Era" crew_chief="Slugger Labbe" id="fbee74ad-5e2d-4f54-bdf5-52b6193b04d6">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="b28b1f53-bdee-4c44-97fb-bb1fd0ea4a8b" name="Richard Childress"/>
+        <team id="ffd3ba10-57f2-4bb8-9aaf-7c64b1ba793a" name="Richard Childress Racing">
+          <owner id="84e3b257-75b1-40ef-8774-cfb53fab90e9" name="Richard Childress"/>
+        </team>
+      </car>
+      <driver first_name="Austin" last_name="Dillon" full_name="Austin Dillon" points_eligible="true" id="8853e676-384e-4d08-8808-970fd111f36a"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="7" positions_gained="0" in_time="206.888" out_time="250.184"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="3" in_time="1856.169" out_time="1897.975"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3022.67" out_time="3064.093"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="0" in_time="5864.768" out_time="5906.546"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="-6" in_time="7228.8" out_time="7276.966"/>
+        <pit-stop sequence="7" lap="318" leader_lap="319" positions_gained="0" in_time="9015.913" out_time="9057.103"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="0" in_time="10180.7" out_time="10224.986"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="0" in_time="10547.199" out_time="10589.372"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="-1" in_time="10899.05" out_time="10941.542"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11620.296" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="28" position="21" status="running" driver_rating="60.7" pit_stops="12" best_lap="4" best_lap_speed="114.884" best_lap_time="23.502" elapsed_time="11540.599" fastest_laps="7" avg_position="21.385" avg_speed="93.583" passes_made="114" quality_passes="8" times_passed="99" passing_differential="15" last_lap_speed="111.015" last_lap_time="24.321" avg_restart_speed="111.683" points="16" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="34" sponsors="Love's/CXS Play It Safe/Starkey Hearing Foundation/Fr8Auctions" crew_chief="Donnie Wingo" id="89e035f0-87f6-4835-ac58-8b7da32de4a4">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="c81a723c-a430-4be5-969f-5fbf21c1d519" name="Bob Jenkins"/>
+        <team id="bd38dfec-bb97-4f29-b032-cc6f0c77dfe6" name="Front Row Motorsports">
+        </team>
+      </car>
+      <driver first_name="Landon" last_name="Cassill" full_name="Landon Cassill" points_eligible="true" id="f07507f1-0a84-4b90-929d-7389dc5baab4"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="7" positions_gained="-1" in_time="204.527" out_time="247.896"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="-4" in_time="1854.214" out_time="1898.532"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="-2" in_time="3024.333" out_time="3067.498"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="0" in_time="5868.27" out_time="5922.655"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="2" in_time="7229.538" out_time="7271.946"/>
+        <pit-stop sequence="7" lap="322" leader_lap="323" positions_gained="0" in_time="9108.72" out_time="9152.544"/>
+        <pit-stop sequence="8" lap="344" leader_lap="344" positions_gained="0" in_time="9699.853" out_time="9746.167"/>
+        <pit-stop sequence="9" lap="357" leader_lap="357" positions_gained="-6" in_time="10178.36" out_time="10246.626"/>
+        <pit-stop sequence="10" lap="367" leader_lap="367" positions_gained="1" in_time="10549.722" out_time="10591.666"/>
+        <pit-stop sequence="11" lap="377" leader_lap="377" positions_gained="-1" in_time="10902.216" out_time="10945.281"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11582.808" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="19" position="22" status="running" driver_rating="58.5" pit_stops="10" best_lap="373" best_lap_speed="115.696" best_lap_time="23.337" elapsed_time="11540.981" fastest_laps="4" avg_position="20.722" avg_speed="93.58" passes_made="119" quality_passes="13" times_passed="136" passing_differential="-17" last_lap_speed="109.383" last_lap_time="24.684" avg_restart_speed="111.955" points="15" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="5" sponsors="Farmers Insurance/Great Clips/LiftMaster/Quicken Loans/Panasonic Toughbook/Mountain Dew/AARP Drive to End Hunger/UniFirst" crew_chief="Keith Rodden" id="3c900bcd-335e-40b5-a8c6-6a774f7b0347">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="cda14f61-7d18-4863-a413-da170827ff2b" name="Linda Hendrick"/>
+        <team id="8427da4c-9c88-4849-9242-0c184d5ed67c" name="Hendrick Motorsports">
+          <owner id="df3acab4-1712-44bb-b913-897b4e20fd50" name="Rick Hendrick"/>
+        </team>
+      </car>
+      <driver first_name="Kasey" last_name="Kahne" full_name="Kasey Kahne" points_eligible="true" id="18d82f63-a0b8-4354-8083-b3e47f050ff1"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="1" in_time="1858.124" out_time="1900.808"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="1" in_time="3025.743" out_time="3068.552"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="2" in_time="5867.263" out_time="5908.848"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7228.51" out_time="7271.118"/>
+        <pit-stop sequence="6" lap="316" leader_lap="317" positions_gained="0" in_time="8969.386" out_time="9010.57"/>
+        <pit-stop sequence="7" lap="357" leader_lap="357" positions_gained="5" in_time="10182.203" out_time="10223.85"/>
+        <pit-stop sequence="8" lap="367" leader_lap="367" positions_gained="1" in_time="10546.744" out_time="10588.986"/>
+        <pit-stop sequence="9" lap="377" leader_lap="377" positions_gained="0" in_time="10897.599" out_time="10938.753"/>
+        <pit-stop sequence="10" lap="400" leader_lap="400" positions_gained="0" in_time="11637.611" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="1" position="23" status="running" driver_rating="111.6" pit_stops="11" best_lap="2" best_lap_speed="119.76" best_lap_time="22.545" elapsed_time="11541.029" fastest_laps="54" avg_position="4.915" avg_speed="93.579" passes_made="41" quality_passes="20" times_passed="57" passing_differential="-16" last_lap_speed="111.4" last_lap_time="24.237" avg_restart_speed="114.842" points="33" bonus_points="19" penalty_points="0" stage_1_points="10" stage_2_points="9" money="0.0" stage_1_win="true" laps_led="164" times_led="2" laps_completed="400">
+      <car number="20" sponsors="DeWalt/Tide/Interstate Batteries/Circle K/Toyota" crew_chief="Jason Ratcliff" id="278372b1-c038-4238-8a42-f53604ab6b02">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="e7846c1b-f64e-4312-8ee3-13c8a0001a8b" name="Joe Gibbs"/>
+        <team id="b30dee06-c437-4e76-8b9c-8b850d52ce21" name="Joe Gibbs Racing">
+        </team>
+      </car>
+      <driver first_name="Matt" last_name="Kenseth" full_name="Matt Kenseth" points_eligible="true" id="04687e5d-3ff9-479a-ae3e-6a4cee7b4d09"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="0" in_time="1845.146" out_time="1886.756"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="0" in_time="3017.405" out_time="3058.187"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="-2" in_time="5859.292" out_time="5901.927"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="0" in_time="7224.337" out_time="7265.478"/>
+        <pit-stop sequence="6" lap="319" leader_lap="319" positions_gained="0" in_time="9021.365" out_time="9061.935"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="0" in_time="9691.324" out_time="9731.501"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="-6" in_time="10174.261" out_time="10218.28"/>
+        <pit-stop sequence="9" lap="365" leader_lap="366" positions_gained="0" in_time="10483.486" out_time="10541.797"/>
+        <pit-stop sequence="10" lap="378" leader_lap="379" positions_gained="1" in_time="10966.614" out_time="11008.855"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11627.245" out_time="0.0"/>
+      </pit-stops>
+      <laps-led>
+        <lead sequence="1" start_lap="1" end_lap="163"/>
+        <lead sequence="2" start_lap="205" end_lap="205"/>
+      </laps-led>
+    </result>
+    <result start_position="14" position="24" status="running" driver_rating="74.2" pit_stops="12" best_lap="3" best_lap_speed="116.134" best_lap_time="23.249" elapsed_time="11541.182" fastest_laps="3" avg_position="13.698" avg_speed="93.578" passes_made="97" quality_passes="50" times_passed="90" passing_differential="7" last_lap_speed="111.543" last_lap_time="24.206" avg_restart_speed="112.591" points="13" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="24" sponsors="NAPA Auto Parts/3M/SunEnergy1/Kelley Blue Book/Mountain Dew/Hooter's" crew_chief="Alan Gustafson" id="7cef9b08-2b70-402f-b5b5-c33c623d3126">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="57fb4b0f-140e-47c6-8710-9e24614b4ff4" name="Rick Hendrick"/>
+        <team id="8427da4c-9c88-4849-9242-0c184d5ed67c" name="Hendrick Motorsports">
+          <owner id="df3acab4-1712-44bb-b913-897b4e20fd50" name="Rick Hendrick"/>
+        </team>
+      </car>
+      <driver first_name="Chase" last_name="Elliott" full_name="Chase Elliott" points_eligible="true" id="5fd3e3fb-322f-4157-ae41-9317fba1997d"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="3" in_time="1855.56" out_time="1897.544"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="-1" in_time="3021.172" out_time="3063.667"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="-1" in_time="5865.719" out_time="5908.718"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="2" in_time="7227.814" out_time="7269.093"/>
+        <pit-stop sequence="6" lap="316" leader_lap="317" positions_gained="0" in_time="8952.897" out_time="8994.404"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="-2" in_time="9693.098" out_time="9735.5"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="-2" in_time="10175.359" out_time="10218.246"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="-2" in_time="10545.256" out_time="10588.57"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="-2" in_time="10896.647" out_time="10938.502"/>
+        <pit-stop sequence="11" lap="378" leader_lap="378" positions_gained="0" in_time="10938.502" out_time="0.0"/>
+        <pit-stop sequence="12" lap="400" leader_lap="400" positions_gained="0" in_time="11595.073" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="26" position="25" status="running" driver_rating="47.2" pit_stops="11" best_lap="3" best_lap_speed="114.879" best_lap_time="23.503" elapsed_time="11541.323" fastest_laps="0" avg_position="25.928" avg_speed="93.577" passes_made="82" quality_passes="0" times_passed="78" passing_differential="4" last_lap_speed="110.195" last_lap_time="24.502" avg_restart_speed="111.912" points="12" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="27" sponsors="Menard's" crew_chief="Matt Borland" id="021d546c-56ee-4399-bc87-00a526bae83d">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="b28b1f53-bdee-4c44-97fb-bb1fd0ea4a8b" name="Richard Childress"/>
+        <team id="ffd3ba10-57f2-4bb8-9aaf-7c64b1ba793a" name="Richard Childress Racing">
+          <owner id="84e3b257-75b1-40ef-8774-cfb53fab90e9" name="Richard Childress"/>
+        </team>
+      </car>
+      <driver first_name="Paul" last_name="Menard" full_name="Paul Menard" points_eligible="true" id="cb239c48-8ccb-4043-a221-531b0da78765"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="7" positions_gained="0" in_time="203.467" out_time="245.762"/>
+        <pit-stop sequence="3" lap="66" leader_lap="67" positions_gained="0" in_time="1858.596" out_time="1903.807"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="-5" in_time="3025.378" out_time="3074.503"/>
+        <pit-stop sequence="5" lap="204" leader_lap="205" positions_gained="2" in_time="5917.586" out_time="5961.518"/>
+        <pit-stop sequence="6" lap="251" leader_lap="252" positions_gained="0" in_time="7282.858" out_time="7324.754"/>
+        <pit-stop sequence="7" lap="344" leader_lap="345" positions_gained="3" in_time="9752.643" out_time="9795.69"/>
+        <pit-stop sequence="8" lap="345" leader_lap="346" positions_gained="0" in_time="9795.69" out_time="0.0"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="2" in_time="10550.518" out_time="10594.422"/>
+        <pit-stop sequence="10" lap="377" leader_lap="377" positions_gained="-1" in_time="10902.526" out_time="10945.743"/>
+        <pit-stop sequence="11" lap="400" leader_lap="400" positions_gained="0" in_time="11591.675" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="24" position="26" status="running" driver_rating="68.7" pit_stops="14" best_lap="215" best_lap_speed="114.855" best_lap_time="23.508" elapsed_time="11542.378" fastest_laps="4" avg_position="16.017" avg_speed="93.568" passes_made="104" quality_passes="33" times_passed="101" passing_differential="3" last_lap_speed="109.374" last_lap_time="24.686" avg_restart_speed="112.099" points="13" bonus_points="2" penalty_points="0" stage_1_points="0" stage_2_points="2" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="13" sponsors="GEICO/Twisted Tea" crew_chief="Bootie Barker" id="fe0dffc0-6808-4372-8b4c-6c91761a0748">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="55059110-7836-4319-b778-473247e7eb05" name="Bob Germain Jr."/>
+        <team id="5f6dc3c2-f6a6-44e9-a9a0-90d73570de24" name="Germain Racing">
+        </team>
+      </car>
+      <driver first_name="Ty" last_name="Dillon" full_name="Ty Dillon" points_eligible="true" id="bfcb8d32-fab0-4bfa-be14-cf9466e1d886"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="1" in_time="203.162" out_time="244.73"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="1" in_time="1852.835" out_time="1894.764"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3022.351" out_time="3063.759"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="-1" in_time="5862.337" out_time="5905.028"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="-1" in_time="7227.467" out_time="7270.042"/>
+        <pit-stop sequence="7" lap="319" leader_lap="320" positions_gained="0" in_time="9038.92" out_time="9080.496"/>
+        <pit-stop sequence="8" lap="344" leader_lap="344" positions_gained="1" in_time="9698.964" out_time="9742.641"/>
+        <pit-stop sequence="9" lap="357" leader_lap="358" positions_gained="0" in_time="10192.723" out_time="10252.115"/>
+        <pit-stop sequence="10" lap="359" leader_lap="360" positions_gained="0" in_time="10306.207" out_time="10344.927"/>
+        <pit-stop sequence="11" lap="367" leader_lap="368" positions_gained="0" in_time="10553.821" out_time="10610.272"/>
+        <pit-stop sequence="12" lap="377" leader_lap="378" positions_gained="0" in_time="10905.737" out_time="10951.136"/>
+        <pit-stop sequence="13" lap="378" leader_lap="379" positions_gained="0" in_time="10974.456" out_time="11012.658"/>
+        <pit-stop sequence="14" lap="400" leader_lap="400" positions_gained="0" in_time="11605.186" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="36" position="27" status="running" driver_rating="44.6" pit_stops="10" best_lap="373" best_lap_speed="114.499" best_lap_time="23.581" elapsed_time="11543.186" fastest_laps="1" avg_position="27.143" avg_speed="93.562" passes_made="62" quality_passes="0" times_passed="79" passing_differential="-17" last_lap_speed="110.339" last_lap_time="24.47" avg_restart_speed="111.32" points="10" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="72" sponsors="Florida Lottery/RTIC Coolers/Rinnai/Carolina Skiff/Standard Plumbing Supply" crew_chief="Frank Kerr" id="b5b7fdaa-bc33-4076-8428-2ac317f9f2d8">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="fe6c0a50-06f5-4b9a-8615-e243c9695c8a" name="Mark Smith"/>
+        <team id="1fcfb1ff-77e7-44e3-824a-d0506e270b54" name="TriStar Motorsports">
+        </team>
+      </car>
+      <driver first_name="Cole" last_name="Whitt" full_name="Cole Whitt" points_eligible="true" id="30180a89-d256-4ab3-aa14-cd5aaab61737"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="7" positions_gained="0" in_time="208.105" out_time="257.532"/>
+        <pit-stop sequence="3" lap="66" leader_lap="67" positions_gained="-2" in_time="1857.279" out_time="1903.207"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3027.665" out_time="3072.461"/>
+        <pit-stop sequence="5" lap="204" leader_lap="205" positions_gained="2" in_time="5916.796" out_time="5960.872"/>
+        <pit-stop sequence="6" lap="251" leader_lap="252" positions_gained="0" in_time="7283.287" out_time="7326.686"/>
+        <pit-stop sequence="7" lap="330" leader_lap="332" positions_gained="0" in_time="9341.155" out_time="9385.219"/>
+        <pit-stop sequence="8" lap="367" leader_lap="367" positions_gained="2" in_time="10551.779" out_time="10596.956"/>
+        <pit-stop sequence="9" lap="368" leader_lap="369" positions_gained="0" in_time="10618.183" out_time="10654.273"/>
+        <pit-stop sequence="10" lap="400" leader_lap="400" positions_gained="0" in_time="11630.859" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="32" position="28" status="running" driver_rating="39.4" pit_stops="8" best_lap="3" best_lap_speed="114.596" best_lap_time="23.561" elapsed_time="11543.902" fastest_laps="2" avg_position="28.39" avg_speed="93.556" passes_made="21" quality_passes="0" times_passed="43" passing_differential="-22" last_lap_speed="109.966" last_lap_time="24.553" avg_restart_speed="110.369" points="9" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="400">
+      <car number="32" sponsors="Can-AM/Kappa/Keen Parts/Visone RV/E.J. Wade Foundation/Cosmo Motors" crew_chief="Gene Nead" id="a5a65137-22fa-4adc-9d5b-e1f937da5992">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="06ab99a6-5ed9-4baa-92dc-86ff94880b69" name="Archie St. Hilaire"/>
+        <team id="81b76d72-9660-437b-85db-c3d40d7a56da" name="Go FAS Racing">
+        </team>
+      </car>
+      <driver first_name="Matt" last_name="DiBenedetto" full_name="Matt DiBenedetto" points_eligible="true" id="06c9c0f9-392a-4f0e-aae7-39bb417af02f"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="104" leader_lap="104" positions_gained="1" in_time="3081.026" out_time="3138.732"/>
+        <pit-stop sequence="3" lap="105" leader_lap="106" positions_gained="0" in_time="3158.397" out_time="3217.79"/>
+        <pit-stop sequence="4" lap="204" leader_lap="205" positions_gained="0" in_time="5919.864" out_time="5963.985"/>
+        <pit-stop sequence="5" lap="297" leader_lap="299" positions_gained="0" in_time="8516.519" out_time="8558.885"/>
+        <pit-stop sequence="6" lap="367" leader_lap="368" positions_gained="2" in_time="10554.389" out_time="10604.569"/>
+        <pit-stop sequence="7" lap="377" leader_lap="377" positions_gained="0" in_time="10904.358" out_time="10949.144"/>
+        <pit-stop sequence="8" lap="400" leader_lap="400" positions_gained="0" in_time="11613.822" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="27" position="29" status="running" driver_rating="40.3" pit_stops="8" best_lap="2" best_lap_speed="114.63" best_lap_time="23.554" elapsed_time="11541.93" fastest_laps="2" avg_position="30.314" avg_speed="93.338" passes_made="30" quality_passes="0" times_passed="36" passing_differential="-6" last_lap_speed="111.23" last_lap_time="24.274" avg_restart_speed="110.965" points="8" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="399">
+      <car number="95" sponsors="KLove Radio/WRL Contractors" crew_chief="Todd Parrott" id="eec39cd8-aad1-45cb-b550-4bec979193d9">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="29740c17-d3fa-43f2-b44f-0660b3bd3dfc" name="Bob Leavine"/>
+        <team id="2325ec83-aa71-445e-aaa2-d92997a1da89" name="Leavine Family Racing">
+          <owner id="0a6a3e6d-809d-4079-adf5-0ff629ef8aa8" name="Bob Leavine"/>
+        </team>
+      </car>
+      <driver first_name="Michael" last_name="McDowell" full_name="Michael McDowell" points_eligible="true" id="96fdd8d7-3776-42b8-baf2-6b4e2cf2d83d"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="0" in_time="1903.103" out_time="1945.616"/>
+        <pit-stop sequence="3" lap="103" leader_lap="104" positions_gained="0" in_time="3078.43" out_time="3121.355"/>
+        <pit-stop sequence="4" lap="203" leader_lap="205" positions_gained="0" in_time="5916.434" out_time="5961.322"/>
+        <pit-stop sequence="5" lap="308" leader_lap="311" positions_gained="0" in_time="8815.158" out_time="8858.256"/>
+        <pit-stop sequence="6" lap="366" leader_lap="367" positions_gained="0" in_time="10552.426" out_time="10601.846"/>
+        <pit-stop sequence="7" lap="377" leader_lap="378" positions_gained="0" in_time="10953.936" out_time="10996.135"/>
+        <pit-stop sequence="8" lap="399" leader_lap="400" positions_gained="0" in_time="11600.244" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="12" position="30" status="running" driver_rating="58.6" pit_stops="10" best_lap="2" best_lap_speed="116.194" best_lap_time="23.237" elapsed_time="11543.35" fastest_laps="2" avg_position="19.338" avg_speed="93.093" passes_made="113" quality_passes="28" times_passed="82" passing_differential="31" last_lap_speed="110.983" last_lap_time="24.328" avg_restart_speed="111.882" points="7" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="398">
+      <car number="88" sponsors="Nationwide Insurance/Axalta Coatings System/Mountain Dew" crew_chief="Greg Ives" id="04b9f3bc-b614-4102-9ce9-db9fad10020d">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="57fb4b0f-140e-47c6-8710-9e24614b4ff4" name="Rick Hendrick"/>
+        <team id="8427da4c-9c88-4849-9242-0c184d5ed67c" name="Hendrick Motorsports">
+          <owner id="df3acab4-1712-44bb-b913-897b4e20fd50" name="Rick Hendrick"/>
+        </team>
+      </car>
+      <driver first_name="Dale" last_name="Earnhardt" full_name="Dale Earnhardt Jr" points_eligible="true" id="fc60204c-116b-40d8-a59e-a565e54e3fda"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="6" leader_lap="6" positions_gained="0" in_time="196.11" out_time="237.763"/>
+        <pit-stop sequence="3" lap="66" leader_lap="66" positions_gained="2" in_time="1849.88" out_time="1891.084"/>
+        <pit-stop sequence="4" lap="103" leader_lap="103" positions_gained="1" in_time="3025.035" out_time="3067.074"/>
+        <pit-stop sequence="5" lap="204" leader_lap="204" positions_gained="-1" in_time="5866.963" out_time="5912.406"/>
+        <pit-stop sequence="6" lap="251" leader_lap="251" positions_gained="3" in_time="7231.362" out_time="7273.307"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="-7" in_time="9696.898" out_time="9800.961"/>
+        <pit-stop sequence="8" lap="355" leader_lap="357" positions_gained="0" in_time="10166.565" out_time="10247.435"/>
+        <pit-stop sequence="9" lap="365" leader_lap="367" positions_gained="0" in_time="10549.317" out_time="10593.494"/>
+        <pit-stop sequence="10" lap="398" leader_lap="400" positions_gained="0" in_time="11643.366" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="31" position="31" status="running" driver_rating="34.7" pit_stops="7" best_lap="3" best_lap_speed="114.811" best_lap_time="23.517" elapsed_time="11545.626" fastest_laps="0" avg_position="32.013" avg_speed="93.074" passes_made="22" quality_passes="0" times_passed="39" passing_differential="-17" last_lap_speed="109.06" last_lap_time="24.757" avg_restart_speed="110.589" points="6" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="398">
+      <car number="23" sponsors="Best Home Furnishing/Dr. Pepper/Schluter Systems/Sunfrog.com" crew_chief="Patrick Donahue" id="4a56a3be-1d91-434e-a403-24b3206573b7">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="a8c6c52b-0e8d-4891-b8f8-7d44ee6d4923" name="Ron Devine"/>
+        <team id="ca72b90b-6d4e-4c24-bdea-cca1d04741b1" name="BK Racing">
+        </team>
+      </car>
+      <driver first_name="Gray" last_name="Gaulding" full_name="Gray Gaulding" points_eligible="true" id="6e5a779b-11fa-46bf-bfc9-51efedfe66c4"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="103" leader_lap="104" positions_gained="1" in_time="3080.667" out_time="3128.235"/>
+        <pit-stop sequence="3" lap="203" leader_lap="205" positions_gained="0" in_time="5918.602" out_time="5965.662"/>
+        <pit-stop sequence="4" lap="250" leader_lap="252" positions_gained="0" in_time="7285.634" out_time="7331.16"/>
+        <pit-stop sequence="5" lap="317" leader_lap="321" positions_gained="0" in_time="9058.891" out_time="9108.323"/>
+        <pit-stop sequence="6" lap="365" leader_lap="368" positions_gained="0" in_time="10553.193" out_time="10598.924"/>
+        <pit-stop sequence="7" lap="398" leader_lap="400" positions_gained="0" in_time="11608.867" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="34" position="32" status="running" driver_rating="34.4" pit_stops="10" best_lap="369" best_lap_speed="114.044" best_lap_time="23.675" elapsed_time="11547.911" fastest_laps="0" avg_position="33.625" avg_speed="92.588" passes_made="25" quality_passes="0" times_passed="39" passing_differential="-14" last_lap_speed="108.862" last_lap_time="24.802" avg_restart_speed="111.08" points="5" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="396">
+      <car number="83" sponsors="Dustless Blasters/JAS Expedited Trucking/Bubba Burger/RMC Events/EarthWater" crew_chief="Ryan Dubois" id="fbf7afde-74a4-4ea4-b02e-d2ad600c75ee">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="a8c6c52b-0e8d-4891-b8f8-7d44ee6d4923" name="Ron Devine"/>
+        <team id="ca72b90b-6d4e-4c24-bdea-cca1d04741b1" name="BK Racing">
+        </team>
+      </car>
+      <driver first_name="Corey" last_name="LaJoie" full_name="Corey LaJoie" points_eligible="true" id="68b9a7ed-c810-4c0d-a330-7a99b90c2587"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="0" in_time="1905.501" out_time="1951.692"/>
+        <pit-stop sequence="3" lap="111" leader_lap="112" positions_gained="0" in_time="3429.861" out_time="3477.378"/>
+        <pit-stop sequence="4" lap="202" leader_lap="205" positions_gained="0" in_time="5917.172" out_time="5970.146"/>
+        <pit-stop sequence="5" lap="203" leader_lap="207" positions_gained="0" in_time="5995.256" out_time="6052.82"/>
+        <pit-stop sequence="6" lap="248" leader_lap="252" positions_gained="0" in_time="7281.09" out_time="7326.158"/>
+        <pit-stop sequence="7" lap="314" leader_lap="319" positions_gained="0" in_time="9022.843" out_time="9070.66"/>
+        <pit-stop sequence="8" lap="340" leader_lap="345" positions_gained="0" in_time="9752.295" out_time="9811.471"/>
+        <pit-stop sequence="9" lap="363" leader_lap="367" positions_gained="0" in_time="10551.328" out_time="10600.144"/>
+        <pit-stop sequence="10" lap="396" leader_lap="400" positions_gained="0" in_time="11625.39" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="33" position="33" status="running" driver_rating="31.4" pit_stops="9" best_lap="379" best_lap_speed="114.586" best_lap_time="23.563" elapsed_time="11545.849" fastest_laps="0" avg_position="33.188" avg_speed="92.371" passes_made="27" quality_passes="0" times_passed="38" passing_differential="-11" last_lap_speed="108.704" last_lap_time="24.838" avg_restart_speed="111.033" points="4" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="395">
+      <car number="15" sponsors="Aaron's/Maid's/Xchange of America/LowT Center" crew_chief="Mark Hillman" id="49118217-dcc7-47f9-a1c5-5505e6835d15">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="767fd447-89f5-4f9b-9cef-90805aec1aed" name="Jay Robinson"/>
+        <team id="ab68c67f-7f5f-4c26-87d1-5cd7d0fc4c25" name="Premium Motorsports">
+        </team>
+      </car>
+      <driver first_name="Reed" last_name="Sorenson" full_name="Reed Sorenson" points_eligible="true" id="1a618e86-838d-4983-9b52-011a67cccf7a"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="-1" in_time="1905.995" out_time="1966.523"/>
+        <pit-stop sequence="3" lap="197" leader_lap="200" positions_gained="0" in_time="5610.148" out_time="5650.114"/>
+        <pit-stop sequence="4" lap="202" leader_lap="205" positions_gained="0" in_time="5919.125" out_time="5965.493"/>
+        <pit-stop sequence="5" lap="248" leader_lap="252" positions_gained="0" in_time="7280.702" out_time="7333.257"/>
+        <pit-stop sequence="6" lap="319" leader_lap="325" positions_gained="0" in_time="9159.825" out_time="9203.386"/>
+        <pit-stop sequence="7" lap="324" leader_lap="331" positions_gained="0" in_time="9317.701" out_time="9345.451"/>
+        <pit-stop sequence="8" lap="363" leader_lap="368" positions_gained="0" in_time="10599.366" out_time="10650.739"/>
+        <pit-stop sequence="9" lap="395" leader_lap="400" positions_gained="0" in_time="11621.898" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="37" position="34" status="running" driver_rating="27.9" pit_stops="9" best_lap="15" best_lap_speed="113.179" best_lap_time="23.856" elapsed_time="11528.519" fastest_laps="0" avg_position="34.542" avg_speed="92.041" passes_made="8" quality_passes="0" times_passed="11" passing_differential="-3" last_lap_speed="108.039" last_lap_time="24.991" avg_restart_speed="109.831" points="0" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="393">
+      <car number="51" sponsors="Spoonful of Music Foundation/Dashhub/Fenton Motors" crew_chief="Joe Lax" id="1e6c455d-a659-4523-8263-66e6544263f9">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="41c22ea5-0caf-459c-9e97-0a13d3e6c086" name="Rick Ware"/>
+        <team id="115610f5-11b9-43ff-a1b4-ef5cdab18119" name="Rick Ware Racing">
+        </team>
+      </car>
+      <driver first_name="Timmy" last_name="Hill" full_name="Timmy Hill" id="a9988edd-7707-4a75-9ee5-d3a8cae0c8aa"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="103" leader_lap="104" positions_gained="-2" in_time="3079.865" out_time="3147.172"/>
+        <pit-stop sequence="3" lap="105" leader_lap="107" positions_gained="0" in_time="3219.212" out_time="3263.894"/>
+        <pit-stop sequence="4" lap="202" leader_lap="205" positions_gained="0" in_time="5919.491" out_time="5982.952"/>
+        <pit-stop sequence="5" lap="204" leader_lap="208" positions_gained="0" in_time="6053.824" out_time="6100.237"/>
+        <pit-stop sequence="6" lap="287" leader_lap="293" positions_gained="0" in_time="8356.865" out_time="8416.658"/>
+        <pit-stop sequence="7" lap="340" leader_lap="347" positions_gained="0" in_time="9865.716" out_time="9914.941"/>
+        <pit-stop sequence="8" lap="362" leader_lap="368" positions_gained="0" in_time="10600.577" out_time="10653.491"/>
+        <pit-stop sequence="9" lap="393" leader_lap="400" positions_gained="0" in_time="11553.602" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="35" position="35" status="running" driver_rating="27.0" pit_stops="7" best_lap="366" best_lap_speed="113.646" best_lap_time="23.758" elapsed_time="11549.087" fastest_laps="0" avg_position="36.246" avg_speed="91.644" passes_made="7" quality_passes="0" times_passed="10" passing_differential="-3" last_lap_speed="108.88" last_lap_time="24.798" avg_restart_speed="110.566" points="2" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="392">
+      <car number="33" sponsors="Starter/Little Joes Autos /Curtis Key Plumbing" crew_chief="Pat Tryson" id="649dbd05-7d8d-4afe-b46b-1c80dafb975d">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="f94f6ac9-3a9b-4cbf-9e07-f15b7453926c" name="Joe Falk"/>
+        <team id="49d1268e-b7c9-49a7-ba3a-0ef65e3cabc6" name="Circle Sport-TMG">
+          <owner id="fe666865-d1ef-49c7-987e-ac0b29ea6fd5" name="Joe Falk"/>
+        </team>
+      </car>
+      <driver first_name="Jeffrey" last_name="Earnhardt" full_name="Jeffrey Earnhardt" points_eligible="true" id="2e33a0c7-05f0-4887-bcbd-b64606114676"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="65" leader_lap="67" positions_gained="0" in_time="1904.75" out_time="1959.867"/>
+        <pit-stop sequence="3" lap="196" leader_lap="202" positions_gained="0" in_time="5729.871" out_time="5780.481"/>
+        <pit-stop sequence="4" lap="245" leader_lap="252" positions_gained="0" in_time="7281.59" out_time="7325.759"/>
+        <pit-stop sequence="5" lap="320" leader_lap="329" positions_gained="0" in_time="9271.454" out_time="9318.894"/>
+        <pit-stop sequence="6" lap="360" leader_lap="368" positions_gained="0" in_time="10599.811" out_time="10646.264"/>
+        <pit-stop sequence="7" lap="392" leader_lap="400" positions_gained="0" in_time="11620.039" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="2" position="36" status="accident" driver_rating="60.2" pit_stops="10" best_lap="3" best_lap_speed="118.167" best_lap_time="22.849" elapsed_time="10921.331" fastest_laps="3" avg_position="16.283" avg_speed="93.45" passes_made="87" quality_passes="32" times_passed="113" passing_differential="-26" last_lap_speed="53.692" last_lap_time="50.287" avg_restart_speed="112.754" points="1" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="378">
+      <car number="21" sponsors="Motorcraft/Quick Lane/SKF" crew_chief="Jeremy Bullins" id="df4ce303-5e1b-4f90-bdd0-1e768780109c">
+        <manufacturer id="12844047-ab59-43ca-ab6c-c10d54931715" name="Ford"/>
+        <owner id="90731d44-8da2-45bd-a8a7-41107fc46e03" name="Glen Wood"/>
+        <team id="0dd8fd36-8bb1-4930-bfdc-d0c6be3b1a13" name="Wood Brothers">
+          <owner id="9fe6c239-ccda-43d0-9bb3-7c72606bf210" name="Wood Brothers"/>
+        </team>
+      </car>
+      <driver first_name="Ryan" last_name="Blaney" full_name="Ryan Blaney" points_eligible="true" id="67948099-4196-4e1b-ae9e-b437aa99000a"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="66" positions_gained="-1" in_time="1854.99" out_time="1898.412"/>
+        <pit-stop sequence="3" lap="103" leader_lap="103" positions_gained="1" in_time="3023.077" out_time="3064.843"/>
+        <pit-stop sequence="4" lap="204" leader_lap="204" positions_gained="0" in_time="5865.242" out_time="5907.325"/>
+        <pit-stop sequence="5" lap="251" leader_lap="251" positions_gained="3" in_time="7229.145" out_time="7270.969"/>
+        <pit-stop sequence="6" lap="316" leader_lap="317" positions_gained="0" in_time="8961.174" out_time="9003.13"/>
+        <pit-stop sequence="7" lap="344" leader_lap="344" positions_gained="1" in_time="9697.326" out_time="9739.723"/>
+        <pit-stop sequence="8" lap="357" leader_lap="357" positions_gained="-1" in_time="10176.637" out_time="10221.008"/>
+        <pit-stop sequence="9" lap="367" leader_lap="367" positions_gained="0" in_time="10544.986" out_time="10585.966"/>
+        <pit-stop sequence="10" lap="377" leader_lap="378" positions_gained="-1" in_time="10908.745" out_time="11059.754"/>
+      </pit-stops>
+    </result>
+    <result start_position="22" position="37" status="running" driver_rating="42.2" pit_stops="9" best_lap="2" best_lap_speed="115.011" best_lap_time="23.476" elapsed_time="11547.517" fastest_laps="8" avg_position="33.744" avg_speed="77.861" passes_made="40" quality_passes="4" times_passed="58" passing_differential="-18" last_lap_speed="108.871" last_lap_time="24.8" avg_restart_speed="112.283" points="1" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="333">
+      <car number="47" sponsors="Kroger/Scott Products/Bush's Beans" crew_chief="Randall Burnett" id="efd240d0-8844-4fcb-a15f-062846ae6e4c">
+        <manufacturer id="dbf04b7a-c4a2-4cff-9dd0-cf1977fc446e" name="Chevrolet"/>
+        <owner id="db238547-f8d4-4999-9614-0e808d83d766" name="Tad Geschickter"/>
+        <team id="fb3e4d03-9408-43c6-b65f-61a2399a146d" name="JTG Daugherty Racing">
+        </team>
+      </car>
+      <driver first_name="AJ" last_name="Allmendinger" full_name="AJ Allmendinger" points_eligible="true" id="fc04af5e-bd27-4e87-850c-a72e22dcb4a6"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+        <pit-stop sequence="2" lap="66" leader_lap="67" positions_gained="-1" in_time="1903.6" out_time="1947.967"/>
+        <pit-stop sequence="3" lap="103" leader_lap="104" positions_gained="0" in_time="3079.054" out_time="3124.409"/>
+        <pit-stop sequence="4" lap="163" leader_lap="166" positions_gained="0" in_time="4745.567" out_time="6268.707"/>
+        <pit-stop sequence="5" lap="203" leader_lap="252" positions_gained="0" in_time="7284.274" out_time="7328.029"/>
+        <pit-stop sequence="6" lap="236" leader_lap="305" positions_gained="0" in_time="8658.244" out_time="8677.059"/>
+        <pit-stop sequence="7" lap="257" leader_lap="325" positions_gained="0" in_time="9180.015" out_time="9222.4"/>
+        <pit-stop sequence="8" lap="277" leader_lap="345" positions_gained="0" in_time="9753.342" out_time="9797.115"/>
+        <pit-stop sequence="9" lap="333" leader_lap="400" positions_gained="0" in_time="11616.385" out_time="0.0"/>
+      </pit-stops>
+    </result>
+    <result start_position="20" position="38" status="accident" driver_rating="24.2" pit_stops="1" best_lap="2" best_lap_speed="115.261" best_lap_time="23.425" elapsed_time="97.021" fastest_laps="0" avg_position="36.854" avg_speed="111.316" passes_made="3" quality_passes="0" times_passed="7" passing_differential="-4" last_lap_speed="115.099" last_lap_time="23.458" avg_restart_speed="112.236" points="1" bonus_points="0" penalty_points="0" stage_1_points="0" stage_2_points="0" money="0.0" laps_led="0" times_led="0" laps_completed="4">
+      <car number="77" sponsors="5-Hour Energy/Sport Clips/Toyota Service Centers" crew_chief="Chris Gayle" id="5d9986fb-1155-4456-a38c-d56b4a618c34">
+        <manufacturer id="73364deb-a012-4625-b759-db6a236797e3" name="Toyota"/>
+        <owner id="58a2e724-ba23-47ae-b1a3-3314ce83f3bc" name="Barney Visser"/>
+        <team id="7e4712e1-9276-4f32-b648-79fc4fa42e7f" name="Furniture Row Motorsports">
+        </team>
+      </car>
+      <driver first_name="Erik" last_name="Jones" full_name="Erik Jones" points_eligible="true" id="e595780e-baa7-4988-9a19-311fef7414d5"/>
+      <pit-stops>
+        <pit-stop sequence="1" lap="0" leader_lap="0" positions_gained="0" in_time="0.0" out_time="0.0"/>
+      </pit-stops>
+    </result>
+  </results>
+</race>
+<!-- Generation ended @ 2017-05-01 14:09:54 +0000 -->
