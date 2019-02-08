@@ -60,6 +60,7 @@
         <select id="league_year" class="form-control year_pick" onchange="putYearInURL()">
             <option value="2017" <?php if($_GET['year'] == '2017') echo "selected='selected'"; ?> >2017</option>
             <option value="2018" <?php if($_GET['year'] == '2018') echo "selected='selected'"; ?> >2018</option>
+            <option value="2019" <?php if($_GET['year'] == '2019') echo "selected='selected'"; ?> >2019</option>
         </select>
     </div>
 
