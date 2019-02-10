@@ -669,101 +669,34 @@ function get_driver_splits($team_roster, $year) {
     $track = 'Las Vegas Motor Speedway';
     $tracksplit = 'track-split';
 
-    if ($year == '2017') {
-        $xml = simplexml_load_file("sprint_cup_drivers.xml");
+    $xml = simplexml_load_file("2018_sprint_cup_drivers.xml");
 
-        $i = 0;
-        while ($i < 46) {
-            $k = 0;
-            $j = 0;
-            foreach ($xml->season[0]->driver[$i]->$tracksplit->record as $record) {
-                if ((string) $record['name'] == 'Daytona International Speedway') {
-                    $j = $k;
-                }
-                $k++;
+    $i = 0;
+    while ($i < 57) {
+        $k = 0;
+        $j = 0;
+        foreach ($xml->season[0]->driver[$i]->$tracksplit->record as $record) {
+            if ((string) $record['name'] == 'Daytona International Speedway') {
+                $j = $k;
             }
-
-            echo "<tr>";
-            echo "<td style='width: 175px;'>".$xml->season[0]->driver[$i]['full_name']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['starts']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['wins']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_5']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_10']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['poles']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['dnf']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['laps_led']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_start_position']."</td>";
-            echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_finish_position']."</td>";
-            echo "</tr>";
-
-            $i++;
-        }
-    } else {
-        $xml = simplexml_load_file("2018_sprint_cup_drivers.xml");
-
-        $xml_drivers = array();
-        $z = 0;
-        while ($z < 57) {
-            $name = (string) $xml->season[0]->driver[$z]['full_name'];
-            $xml_drivers[$name] = $xml->season[0]->driver[$z];
-            $z++;
+            $k++;
         }
 
-        $sorted_drivers = array();
-        $q = 0;
-        while ($q < 10) {
-            $s1_driver = $team_roster[$q]->get_driver(1);
-            $s2_driver = $team_roster[$q]->get_driver(2);
-            $s3_driver = $team_roster[$q]->get_driver(3);
-            array_push($sorted_drivers, $xml_drivers[$s1_driver], $xml_drivers[$s2_driver], $xml_drivers[$s3_driver]);
+        echo "<tr>";
+        echo "<td style='width: 175px;'>".$xml->season[0]->driver[$i]['full_name']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['starts']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['wins']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_5']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_10']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['poles']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['dnf']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['laps_led']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_start_position']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_finish_position']."</td>";
+        echo "</tr>";
 
-            $q++;
-        }
-
-        $i = 0;
-        $n = 0;
-        while ($i < 30) {
-            $k = 0;
-            $j = 0;
-            foreach ($sorted_drivers[$i]->$tracksplit->record as $record) {
-                if ((string) $record['name'] == 'Daytona International Speedway') {
-                    $j = $k;
-                }
-                $k++;
-            }
-
-            if ($i % 3 == 0) {
-                echo "<tr style='border-top: 2px solid #ddd;border-bottom: 2px solid #ddd;'>";
-                echo "<td style='width: 175px;font-size:10px;text-align:center;'>".$team_roster[$n]->get_team_standing()->get_team_name()."</td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "<td> </td>";
-                echo "</tr>";
-                $n++;
-            } 
-
-            echo "<tr>";
-            echo "<td style='width: 175px;'>".$sorted_drivers[$i]['full_name']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['starts']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['wins']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['top_5']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['top_10']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['poles']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['dnf']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['laps_led']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['avg_start_position']."</td>";
-            echo "<td>".$sorted_drivers[$i]->$tracksplit->record[$j]['avg_finish_position']."</td>";
-            echo "</tr>";
-
-            $i++;        
-        }
-    }       
+        $i++;
+    }
 }
 
 
