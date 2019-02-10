@@ -677,7 +677,7 @@ function get_driver_splits($team_roster, $year) {
             $k = 0;
             $j = 0;
             foreach ($xml->season[0]->driver[$i]->$tracksplit->record as $record) {
-                if ((string) $record['name'] == 'Darlington Raceway') {
+                if ((string) $record['name'] == 'Daytona International Speedway') {
                     $j = $k;
                 }
                 $k++;
@@ -726,7 +726,7 @@ function get_driver_splits($team_roster, $year) {
             $k = 0;
             $j = 0;
             foreach ($sorted_drivers[$i]->$tracksplit->record as $record) {
-                if ((string) $record['name'] == 'Darlington Raceway') {
+                if ((string) $record['name'] == 'Daytona International Speedway') {
                     $j = $k;
                 }
                 $k++;

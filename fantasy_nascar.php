@@ -2,11 +2,11 @@
     if(isset($_GET['year'])) {
         $url_year = $_GET['year'];
         $num_year = (int)$url_year;
-        if($num_year < 2017 || $num_year > 2018) {
-            header("Location: /fantasy_nascar.php?year=2018");
+        if($num_year < 2017 || $num_year > 2019) {
+            header("Location: /fantasy_nascar.php?year=2019");
         } 
     } else {
-        header("Location: /fantasy_nascar.php?year=2018");
+        header("Location: /fantasy_nascar.php?year=2019");
     }      
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,8 @@
     <style type="text/css">
         .year_pick {
             margin-top: 20px;
-            margin-left: 120px;
+            margin-left: 100px;
+            width: 80px;
         }
 
         @media screen and (max-width: 767px) {
@@ -74,6 +75,10 @@
         include 'nascar_drivers_teams_2018.php';
         include 'nascar_results_2018.php';
     }
+    if($_GET['year'] == '2019') {
+        include 'nascar_drivers_teams_2019.php';
+        include 'nascar_results_2019.php';
+    }
     ?>
 
     <div class="container-fluid">
@@ -81,7 +86,7 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h3 style="color: #fff;text-align: center;">Daytona Int'l Speedway Driver Splits</h3>
+                        <h3 style="color: #fff;text-align: center;">Daytona International Speedway Driver Splits</h3>
                         <div class="table-responsive" style="border-right: 3px solid #fff; margin-top: 20px;margin-bottom: 20px;">       
                         <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;margin-bottom: 0px;">
                             <thead>
@@ -112,7 +117,7 @@
                 <div class="row top_margin">
                     <div class="col-lg-2 col-lg-offset-5">
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
-                            <option value="one" data-show=".week1">Week 1 (Daytona)</option>
+                            <option value="one" data-show=".week1" selected="selected">Week 1 (Daytona)</option>
                             <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
                             <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
@@ -149,7 +154,13 @@
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
                                 echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                echo '<option value="thirty" data-show=".week30" selected="selected">Championship (Weeks 33-36)</option>';
+                                echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                            }
+                            if($_GET['year'] == '2019') {
+                                echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
+                                //echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
+                                //echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+                                //echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
                             }
                             ?>
                             
