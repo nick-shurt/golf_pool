@@ -227,7 +227,7 @@
                                 </thead>
 
                                 <tbody>
-                                    <?php $driver_rank = get_driver_standings($season_drivers); ?>
+                                    <?php $driver_rank = get_driver_standings($season_drivers, $_GET['year']); ?>
                                 </tbody>
                             </table>
                         </div>          

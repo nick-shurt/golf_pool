@@ -785,7 +785,7 @@ function get_team_standings($team_standings) {
 }
 
 
-function get_driver_standings($season_drivers) {
+function get_driver_standings($season_drivers, $year) {
     usort($season_drivers, "sort_total_fantasy_pts");
 
     $driver_rank;
@@ -793,9 +793,17 @@ function get_driver_standings($season_drivers) {
     $i = 0;
     $break = 0;
     $tied = false;
-    while ($i < 46) {
-
-        $next = ($i < 45) ? $i + 1 : $i + 0;
+    $total_drivers = 0;
+    if ($year == '2019') {
+        $total_drivers = 43;
+    } else if ($year == '2018') {
+        $total_drivers = 47;
+    } else if ($year == '2017') {
+        $total_drivers = 48;
+    }
+    
+    while ($i < $total_drivers) {
+        $next = ($i < $total_drivers - 1) ? $i + 1 : $i + 0;
         if ($season_drivers[$i]->get_season_pts() == $season_drivers[$next]->get_season_pts()) {
             $tied = true;
         } else {
