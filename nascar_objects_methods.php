@@ -666,13 +666,11 @@ function get_tiebreaker($team1, $team2) {
 }
 
 function get_driver_splits($team_roster, $year) {
-    $track = 'Las Vegas Motor Speedway';
     $tracksplit = 'track-split';
-
-    $xml = simplexml_load_file("2018_sprint_cup_drivers.xml");
+    $xml = simplexml_load_file("2019_sprint_cup_drivers.xml");
 
     $i = 0;
-    while ($i < 57) {
+    while ($i < 35) {
         $k = 0;
         $j = 0;
         foreach ($xml->season[0]->driver[$i]->$tracksplit->record as $record) {
@@ -686,13 +684,13 @@ function get_driver_splits($team_roster, $year) {
         echo "<td style='width: 175px;'>".$xml->season[0]->driver[$i]['full_name']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['starts']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['wins']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_start_position']."</td>";
+        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_finish_position']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_5']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['top_10']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['poles']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['dnf']."</td>";
         echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['laps_led']."</td>";
-        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_start_position']."</td>";
-        echo "<td>".$xml->season[0]->driver[$i]->$tracksplit->record[$j]['avg_finish_position']."</td>";
         echo "</tr>";
 
         $i++;
@@ -801,7 +799,7 @@ function get_driver_standings($season_drivers, $year) {
     } else if ($year == '2017') {
         $total_drivers = 48;
     }
-    
+
     while ($i < $total_drivers) {
         $next = ($i < $total_drivers - 1) ? $i + 1 : $i + 0;
         if ($season_drivers[$i]->get_season_pts() == $season_drivers[$next]->get_season_pts()) {

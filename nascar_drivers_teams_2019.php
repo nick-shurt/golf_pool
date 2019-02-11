@@ -49,7 +49,7 @@ $season_drivers = array($michael_mcdowell,$joey_logano,$kyle_larson,$ty_dillon,$
 
 $team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Darrell Wallace Jr","Derrike Cope");
 $team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
-$team_donna = new Team("Team Donna","Kyle Busch","Ryan Blaney","Michael McDowell","Gray Gaulding");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
 $team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
 $team_joey = new Team("Team Joey","Joey Logano","Erik Jones","AJ Allmendinger","Corey Lajoie");
 $team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");

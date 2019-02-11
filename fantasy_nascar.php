@@ -94,13 +94,13 @@
                                     <th style='width: 162px';>Driver</th>
                                     <th>Starts</th>
                                     <th>Wins</th>
+                                    <th>Avg Start Pos</th>
+                                    <th>Avg Finish Pos</th>
                                     <th>Top 5</th>
                                     <th>Top 10</th>
                                     <th>Poles</th>
                                     <th>DNF</th>
                                     <th>Laps Led</th>
-                                    <th>Avg Start Pos</th>
-                                    <th>Avg Finish Pos</th>
                                 </tr>
                             </thead>
                             <tbody>
