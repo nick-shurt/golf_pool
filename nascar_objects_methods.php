@@ -793,7 +793,7 @@ function get_driver_standings($season_drivers, $year) {
     $tied = false;
     $total_drivers = 0;
     if ($year == '2019') {
-        $total_drivers = 43;
+        $total_drivers = 44;
     } else if ($year == '2018') {
         $total_drivers = 47;
     } else if ($year == '2017') {

@@ -43,8 +43,9 @@ $ryan_preece = new Season_Driver("Ryan Preece");
 $matt_tifft = new Season_Driver("Matt Tifft");
 $tanner_berryhill = new Season_Driver("Tanner Berryhill");
 $daniel_hemric = new Season_Driver("Daniel Hemric");
+$ross_chastain = new Season_Driver("Ross Chastain");
 
-$season_drivers = array($michael_mcdowell,$joey_logano,$kyle_larson,$ty_dillon,$austin_dillon,$ricky_stenhouse,$aric_almirola,$denny_hamlin,$chris_buescher,$landon_cassill,$alex_bowman,$martin_truex,$ryan_newman,$brad_keselowski,$erik_jones,$david_ragan,$corey_lajoie,$chase_elliott,$joey_gase,$paul_menard,$kyle_busch,$aj_allmendinger,$kevin_harvick,$kasey_kahne,$daniel_suarez,$gray_gaulding,$ryan_blaney,$danica_patrick,$trevor_bayne,$jimmie_johnson,$clint_bowyer,$derrike_cope,$jeffrey_earnhardt,$kurt_busch,$matt_DiBenedetto,$bubba_wallace,$william_byron,$ray_black,$matt_kenseth,$ryan_preece,$matt_tifft,$tanner_berryhill,$daniel_hemric);
+$season_drivers = array($ross_chastain,$michael_mcdowell,$joey_logano,$kyle_larson,$ty_dillon,$austin_dillon,$ricky_stenhouse,$aric_almirola,$denny_hamlin,$chris_buescher,$landon_cassill,$alex_bowman,$martin_truex,$ryan_newman,$brad_keselowski,$erik_jones,$david_ragan,$corey_lajoie,$chase_elliott,$joey_gase,$paul_menard,$kyle_busch,$aj_allmendinger,$kevin_harvick,$kasey_kahne,$daniel_suarez,$gray_gaulding,$ryan_blaney,$danica_patrick,$trevor_bayne,$jimmie_johnson,$clint_bowyer,$derrike_cope,$jeffrey_earnhardt,$kurt_busch,$matt_DiBenedetto,$bubba_wallace,$william_byron,$ray_black,$matt_kenseth,$ryan_preece,$matt_tifft,$tanner_berryhill,$daniel_hemric);
 
 
 $team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Darrell Wallace Jr","Derrike Cope");
