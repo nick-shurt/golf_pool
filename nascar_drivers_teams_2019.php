@@ -55,7 +55,7 @@ $team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon
 $team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
 $team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
 $team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
-$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Jamie McMurray","Matt Tifft");
 $team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
 $team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
 
