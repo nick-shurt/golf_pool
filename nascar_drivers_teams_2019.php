@@ -60,37 +60,360 @@ $team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buesch
 $team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
 
 $week_1_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_2_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_3_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_4_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_5_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_6_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_7_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_8_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_9_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_10_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_11_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_12_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_13_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_14_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_15_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_16_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_17_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_18_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_19_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_20_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_21_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_22_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_23_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_24_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_25_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_26_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
+
 $week_27_teams = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
+
+$team_chives = new Team("Team Chives","Denny Hamlin","Austin Dillon","Bubba Wallace","Derrike Cope");
+$team_docks = new Team("Team Docks","Jimmie Johnson","Alex Bowman","Ryan Newman","Trevor Bayne");
+$team_donna = new Team("Team Donna","Kyle Busch","Paul Menard","David Ragan","Ross Chastain");
+$team_jim = new Team("Team Jim","Kurt Busch","Aric Almirola","Ty Dillon","Landon Cassill");
+$team_joey = new Team("Team Joey","Joey Logano","Erik Jones","Corey Lajoie","AJ Allmendinger");
+$team_jru = new Team("Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+$team_matt = new Team("Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_mike = new Team("Team Mike","Kyle Larson","Ricky Stenhouse Jr","Matt Tifft","Jamie McMurray");
+$team_nick = new Team("Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_rachel = new Team("Team Rachel","Brad Keselowski","Daniel Suarez","Daniel Hemric","Matt Kenseth");
 
 $week_0_teams = array(); // DUMMY TEAM TO COVER INDEX 0 //
 $teams_week = array($week_0_teams,$week_1_teams,$week_2_teams,$week_3_teams,$week_4_teams,$week_5_teams,$week_6_teams,$week_7_teams,$week_8_teams,$week_9_teams,$week_10_teams,$week_11_teams,$week_12_teams,$week_13_teams,$week_14_teams,$week_15_teams,$week_16_teams,$week_17_teams,$week_18_teams,$week_19_teams,$week_20_teams,$week_21_teams,$week_22_teams,$week_23_teams,$week_24_teams,$week_25_teams,$week_26_teams,$week_27_teams);
 
-$team_standings = array($team_chives,$team_docks,$team_donna,$team_jim,$team_joey,$team_jru,$team_matt,$team_mike,$team_nick,$team_rachel);
+$team_standings = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chives,$team_docks,$team_jru,$team_matt,$team_joey,$team_nick);
 $team_roster = $team_standings;
 $driver_rank = array();
 
