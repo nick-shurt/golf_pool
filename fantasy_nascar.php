@@ -117,8 +117,8 @@
                 <div class="row top_margin">
                     <div class="col-lg-2 col-lg-offset-5">
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
-                            <option value="one" data-show=".week1" selected="selected">Week 1 (Daytona)</option>
-                            <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
+                            <option value="one" data-show=".week1">Week 1 (Daytona)</option>
+                            <option value="two" data-show=".week2" selected="selected">Week 2 (Atlanta)</option>
                             <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
                             <option value="five" data-show=".week5">Week 5 (Fontana)</option>
