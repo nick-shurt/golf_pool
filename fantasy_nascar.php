@@ -86,7 +86,7 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h3 style="color: #fff;text-align: center;">Daytona International Speedway Driver Splits</h3>
+                        <h3 style="color: #fff;text-align: center;">Las Vegas Motor Speedway Driver Splits</h3>
                         <div class="table-responsive" style="border-right: 3px solid #fff; margin-top: 20px;margin-bottom: 20px;">       
                         <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;margin-bottom: 0px;">
                             <thead>
@@ -118,8 +118,8 @@
                     <div class="col-lg-2 col-lg-offset-5">
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
                             <option value="one" data-show=".week1">Week 1 (Daytona)</option>
-                            <option value="two" data-show=".week2" selected="selected">Week 2 (Atlanta)</option>
-                            <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
+                            <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
+                            <option value="three" data-show=".week3" selected="selected">Week 3 (Las Vegas)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
                             <option value="five" data-show=".week5">Week 5 (Fontana)</option>
                             <option value="six" data-show=".week6">Week 6 (Martinsville)</option>
