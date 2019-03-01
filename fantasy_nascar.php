@@ -270,6 +270,5 @@
         window.location = url;
     }
     </script>
-
 </body>
 </html>
