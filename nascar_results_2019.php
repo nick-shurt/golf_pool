@@ -12,4 +12,5 @@ get_season_points($season_drivers, "results/2019_daytona_results.xml");
 get_season_points($season_drivers, "results/2019_atlanta_results.xml");
 get_season_points($season_drivers, "results/2019_las_vegas_results.xml");
 
+
 ?>
