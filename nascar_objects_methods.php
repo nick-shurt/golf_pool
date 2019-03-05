@@ -674,7 +674,7 @@ function get_driver_splits($team_roster, $year) {
         $k = 0;
         $j = 0;
         foreach ($xml->season[0]->driver[$i]->$tracksplit->record as $record) {
-            if ((string) $record['name'] == 'Las Vegas Motor Speedway') {
+            if ((string) $record['name'] == 'ISM Raceway') {
                 $j = $k;
             }
             $k++;
