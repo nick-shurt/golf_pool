@@ -119,8 +119,8 @@
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
                             <option value="one" data-show=".week1">Week 1 (Daytona)</option>
                             <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
-                            <option value="three" data-show=".week3" selected="selected">Week 3 (Las Vegas)</option>
-                            <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
+                            <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
+                            <option value="four" data-show=".week4" selected="selected">Week 4 (Phoenix)</option>
                             <option value="five" data-show=".week5">Week 5 (Fontana)</option>
                             <option value="six" data-show=".week6">Week 6 (Martinsville)</option>
                             <option value="seven" data-show=".week7">Week 7 (Texas)</option>
