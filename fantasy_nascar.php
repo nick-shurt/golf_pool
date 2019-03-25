@@ -26,11 +26,27 @@
             width: 80px;
         }
 
+        .next_race {
+            color: #fff;
+            border: 3px solid #fff;
+            background-color: #333;
+            margin: 0 auto;
+            width:50%;
+        }
+
         @media screen and (max-width: 767px) {
             .year_pick {
                 margin-top: 20px;
                 margin-left: 0px;
                 width: 80px;
+            }
+
+            .next_race {
+                color: #fff;
+                border: 3px solid #fff;
+                background-color: #333;
+                margin: 0 auto;
+                width:100%;
             }
         }
     </style>
@@ -86,28 +102,8 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h3 style="color: #fff;text-align: center;">ISM Raceway (Phoenix) Driver Splits</h3>
-                        <div class="table-responsive" style="border-right: 3px solid #fff; margin-top: 20px;margin-bottom: 20px;">       
-                        <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;margin-bottom: 0px;">
-                            <thead>
-                                <tr>                    
-                                    <th style='width: 162px';>Driver</th>
-                                    <th>Starts</th>
-                                    <th>Wins</th>
-                                    <th>Avg Start Pos</th>
-                                    <th>Avg Finish Pos</th>
-                                    <th>Top 5</th>
-                                    <th>Top 10</th>
-                                    <th>Poles</th>
-                                    <th>DNF</th>
-                                    <th>Laps Led</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php get_driver_splits($team_roster, $_GET['year']); ?>
-                            </tbody>
-                        </table>
-                        </div>
+                        <h1 style="color: #fff;text-align: center;">Next Race:</h1>
+                        <?php parse_cup_schedule(); ?>
                     </div>  
                 </div>  
             </div>
@@ -121,7 +117,7 @@
                             <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
                             <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
-                            <option value="five" data-show=".week5" selected="selected">Week 5 (Fontana)</option>
+                            <option value="five" data-show=".week5">Week 5 (Fontana)</option>
                             <option value="six" data-show=".week6">Week 6 (Martinsville)</option>
                             <option value="seven" data-show=".week7">Week 7 (Texas)</option>
                             <option value="eight" data-show=".week8">Week 8 (Bristol)</option>
@@ -269,6 +265,14 @@
         url += year;
         window.location = url;
     }
+    </script>
+
+    <script>
+    $(function() {
+        var optionValue  = "<?php echo $test_var; ?>";
+        $("#theSelect").val(optionValue)
+        .find("option[value=" + optionValue +"]").attr('selected', true);
+    })
     </script>
 </body>
 </html>

@@ -945,4 +945,68 @@ $wk9_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
 $num_pairs = array($wk1_pairs,$wk2_pairs,$wk3_pairs,$wk4_pairs,$wk5_pairs,$wk6_pairs,$wk7_pairs,$wk8_pairs,$wk9_pairs);
 
+
+function parse_cup_schedule() {
+    $xml = simplexml_load_file("2019_cup_schedule.xml");
+
+    $found = false;
+    foreach ($xml->season[0]->event as $event) {
+        foreach ($event->race as $race) {
+            $datetime1 = new DateTime();
+            //$test = $datetime1->format("Y-m-d");
+            //echo $test . "<br>";
+            $datetime2 = new DateTime($race['scheduled']);
+            $datetime3 = new DateTime("2019-04-13");
+            $interval = $datetime1->diff($datetime2);
+            $elapsed_m = $interval->format('%m');
+            $elapsed_d = $interval->format('%r%a');
+            $elapsed_h = $interval->format('%r%h');
+            //echo $elapsed_m . " ";
+            //echo $elapsed_d . " ";
+            //echo $elapsed_h . " ";
+            //echo $race['number'] . " ";
+            //echo $race['scheduled'] . "<br>";
+            if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= 0 && $elapsed_d < '7') && !$found) {
+                //echo "Test <br>"; 
+                //echo $elapsed_m . "<br>";
+                //echo $elapsed_d . "<br>";
+                //echo "<h2>" . $race['name'] . " at " . $event->track['name'] . "</h2><br>";
+                $date = date_create($race['scheduled']);
+                $edt = new DateTimeZone('America/New_York');
+                $date->setTimezone($edt);
+                $currentDate = date("Y-m-d");
+
+
+                
+                echo "<h2 style='color: #fff;text-align: center;'>" . $race['name'] . " at " . $event->track['name'] . "</h2>";
+                echo "<div class='table-responsive' style='margin-top: 20px;margin-bottom: 20px;'>";
+                echo "<table class='table next_race'>";
+
+                echo "<tr>";
+                echo "<th style='border-right: 3px solid #fff;'><strong>Date</strong></th>";
+                echo "<td style='width:60%'>" . date_format($date, "D, M j, g:i A") . "</td>";
+                echo "</tr>";
+                echo "<tr>";
+                echo "<th style='border-right: 3px solid #fff;'>Distance</th>";
+                echo "<td>" . $race['laps'] . " laps/" . $race['distance'] . " miles" . "</td>";
+                echo "</tr>";
+                echo "<tr>";
+                echo "<th style='border-right: 3px solid #fff;'>TV Broadcast</th>";
+                echo "<td>" . $race->broadcast['network'] . "</td>";
+                echo "</tr>";
+                echo "</table>";
+                echo "</div>";
+
+                //echo "Date: " . date_format($date, "D, M j, g:i A") . "<br>";
+                //echo "Distance: " . $race['laps'] . " laps/" . $race['distance'] . " miles" . "<br>";
+                //echo "TV: " . $race->broadcast['network'] . "<br>";
+                $found = true;
+            }
+        }
+    }
+    //echo $xml->season[0]->event[0]->race[0]['name'];
+}
+
+$test_var = "six";
+
 ?>
