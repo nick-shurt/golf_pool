@@ -956,17 +956,20 @@ function parse_cup_schedule() {
             //$test = $datetime1->format("Y-m-d");
             //echo $test . "<br>";
             $datetime2 = new DateTime($race['scheduled']);
-            $datetime3 = new DateTime("2019-04-13");
             $interval = $datetime1->diff($datetime2);
             $elapsed_m = $interval->format('%m');
             $elapsed_d = $interval->format('%r%a');
-            $elapsed_h = $interval->format('%r%h');
+            $elapsed_r = $elapsed_d[0];
+            //$elapsed_h = $interval->format('%r%h');
+            //$elapsed_dd = $interval->format('%r%d');
             //echo $elapsed_m . " ";
             //echo $elapsed_d . " ";
+            //echo $elapsed_r . " ";
+            //echo $elapsed_dd . " ";
             //echo $elapsed_h . " ";
             //echo $race['number'] . " ";
-            //echo $race['scheduled'] . "<br>";
-            if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= 0 && $elapsed_d < '7') && !$found) {
+            // $race['scheduled'] . "<br>";
+            if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= 0 && $elapsed_d >= '0' && $elapsed_r != '-') && !$found) {
                 //echo "Test <br>"; 
                 //echo $elapsed_m . "<br>";
                 //echo $elapsed_d . "<br>";
@@ -1007,6 +1010,6 @@ function parse_cup_schedule() {
     //echo $xml->season[0]->event[0]->race[0]['name'];
 }
 
-$test_var = "six";
+$test_var = "seven";
 
 ?>
