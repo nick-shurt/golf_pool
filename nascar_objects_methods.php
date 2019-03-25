@@ -1010,6 +1010,6 @@ function parse_cup_schedule() {
     //echo $xml->season[0]->event[0]->race[0]['name'];
 }
 
-$test_var = "seven";
+$test_var = "six";
 
 ?>
