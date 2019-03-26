@@ -1010,6 +1010,24 @@ function parse_cup_schedule() {
     //echo $xml->season[0]->event[0]->race[0]['name'];
 }
 
-$test_var = "six";
+function test_new_api() {
+    // Step 1
+    $cSession = curl_init(); 
+    // Step 2
+    curl_setopt($cSession,CURLOPT_URL,"https://api.fantasydata.net/nascar/v2/xml/raceresult/396?Subscription-Key=90bd257c000e45f4baf326c8d554b33a");
+    curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
+    curl_setopt($cSession,CURLOPT_HEADER, false); 
+    // Step 3
+    $result=curl_exec($cSession);
+    // Step 4
+    curl_close($cSession);
+    // Step 5
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo $result;
+}
+
+//$test_var = "six";
 
 ?>
