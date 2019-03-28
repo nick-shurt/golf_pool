@@ -1,15 +1,7 @@
-$("#theSelect").change(function(){          
-    var value = $("#theSelect option:selected").val();
-    var theDiv = $(".is_" + value);
-    
-    theDiv.siblings('[class*=is]').addClass("hidden");
-    theDiv.removeClass("hidden");
-});
+$("#theSelect").change(function() {
+  var value = $("#theSelect option:selected").val();
+  var theDiv = $(".is_" + value);
 
-$(document).ready(function(){
-	var value = $("#theSelect option:selected").val();
-    var theDiv = $(".is_" + value);
-    
-    theDiv.siblings('[class*=is]').addClass("hidden");
-    theDiv.removeClass("hidden");
+  theDiv.siblings("[class*=is]").addClass("hidden");
+  theDiv.removeClass("hidden");
 });

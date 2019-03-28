@@ -295,6 +295,24 @@ function get_results($team, $file) {
     $team->set_points($points);
 }
 
+function get_results_test($team, $string) {
+    $xml2 = simplexml_load_string($string);
+    $points = 0;
+    
+    foreach ($team->get_drivers() as $driver) {
+        $driver_pts = 0;
+        foreach ($xml2->results->result as $result) {
+            if ($driver->get_driver() == $result->driver["full_name"]) {
+                $driver_pts = getPoints($result);                    
+            }             
+        }
+        //$driver_pts += check_for_bonus($driver, $file);
+        $driver->set_driver_points($driver_pts);
+        $points += $driver_pts;
+    }
+    $team->set_points($points);
+}
+
 function get_season_points($drivers, $file) {
     $xml2 = simplexml_load_file($file);
     $points = 0;
@@ -953,33 +971,25 @@ function parse_cup_schedule() {
     foreach ($xml->season[0]->event as $event) {
         foreach ($event->race as $race) {
             $datetime1 = new DateTime();
-            //$test = $datetime1->format("Y-m-d");
-            //echo $test . "<br>";
             $datetime2 = new DateTime($race['scheduled']);
             $interval = $datetime1->diff($datetime2);
             $elapsed_m = $interval->format('%m');
             $elapsed_d = $interval->format('%r%a');
             $elapsed_r = $elapsed_d[0];
-            //$elapsed_h = $interval->format('%r%h');
-            //$elapsed_dd = $interval->format('%r%d');
+            $elapsed_h = $interval->format('%r%h');
+            $elapsed_dd = $interval->format('%r%d');
             //echo $elapsed_m . " ";
             //echo $elapsed_d . " ";
             //echo $elapsed_r . " ";
             //echo $elapsed_dd . " ";
             //echo $elapsed_h . " ";
             //echo $race['number'] . " ";
-            // $race['scheduled'] . "<br>";
+            //echo $race['scheduled'] . "<br>";
             if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= 0 && $elapsed_d >= '0' && $elapsed_r != '-') && !$found) {
-                //echo "Test <br>"; 
-                //echo $elapsed_m . "<br>";
-                //echo $elapsed_d . "<br>";
-                //echo "<h2>" . $race['name'] . " at " . $event->track['name'] . "</h2><br>";
                 $date = date_create($race['scheduled']);
                 $edt = new DateTimeZone('America/New_York');
                 $date->setTimezone($edt);
                 $currentDate = date("Y-m-d");
-
-
                 
                 echo "<h2 style='color: #fff;text-align: center;'>" . $race['name'] . " at " . $event->track['name'] . "</h2>";
                 echo "<div class='table-responsive' style='margin-top: 20px;margin-bottom: 20px;'>";
@@ -1000,34 +1010,33 @@ function parse_cup_schedule() {
                 echo "</table>";
                 echo "</div>";
 
-                //echo "Date: " . date_format($date, "D, M j, g:i A") . "<br>";
-                //echo "Distance: " . $race['laps'] . " laps/" . $race['distance'] . " miles" . "<br>";
-                //echo "TV: " . $race->broadcast['network'] . "<br>";
                 $found = true;
             }
         }
     }
-    //echo $xml->season[0]->event[0]->race[0]['name'];
 }
 
-function test_new_api() {
-    // Step 1
-    $cSession = curl_init(); 
-    // Step 2
-    curl_setopt($cSession,CURLOPT_URL,"https://api.fantasydata.net/nascar/v2/xml/raceresult/396?Subscription-Key=90bd257c000e45f4baf326c8d554b33a");
-    curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
-    curl_setopt($cSession,CURLOPT_HEADER, false); 
-    // Step 3
-    $result=curl_exec($cSession);
-    // Step 4
-    curl_close($cSession);
-    // Step 5
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo $result;
-}
+function get_current_week() {
+    $f = new NumberFormatter("en", NumberFormatter::SPELLOUT);
 
-//$test_var = "six";
+    $xml = simplexml_load_file("2019_cup_schedule.xml");
+    
+    $cur_week = "";
+    $found = false;
+    foreach ($xml->season[0]->event as $event) {
+        foreach ($event->race as $race) {
+            $datetime1 = new DateTime("2019-03-28");
+            $datetime2 = new DateTime($race['scheduled']);
+            $interval = $datetime1->diff($datetime2);
+            $elapsed_m = $interval->format('%m');
+            $elapsed_d = $interval->format('%r%a');
+            if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= -3 && $elapsed_d >= '-3') && !$found) {
+                $cur_week = $f->format($race['number']);
+                $found = true;
+            }
+        }
+    }
+    echo $cur_week;
+}
 
 ?>

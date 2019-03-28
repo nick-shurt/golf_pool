@@ -118,7 +118,7 @@
                             <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
                             <option value="five" data-show=".week5">Week 5 (Fontana)</option>
-                            <option value="six" data-show=".week6" selected>Week 6 (Martinsville)</option>
+                            <option value="six" data-show=".week6">Week 6 (Martinsville)</option>
                             <option value="seven" data-show=".week7">Week 7 (Texas)</option>
                             <option value="eight" data-show=".week8">Week 8 (Bristol)</option>
                             <option value="nine" data-show=".week9">Week 9 (Richmond)</option>
@@ -269,10 +269,21 @@
 
     <script>
     $(function() {
-        var optionValue  = "<?php echo $test_var; ?>";
+        var optionValue  = "<?php get_current_week(); ?>";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
+    </script>
+
+    <script>
+    function setWeek() {
+        var value = $("#theSelect option:selected").val();
+        var theDiv = $(".is_" + value);
+        
+        theDiv.siblings('[class*=is]').addClass("hidden");
+        theDiv.removeClass("hidden");
+    }
+    window.onload = setWeek;
     </script>
 </body>
 </html>
