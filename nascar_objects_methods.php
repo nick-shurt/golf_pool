@@ -1007,6 +1007,10 @@ function parse_cup_schedule() {
                 echo "<th style='border-right: 3px solid #fff;'>TV Broadcast</th>";
                 echo "<td>" . $race->broadcast['network'] . "</td>";
                 echo "</tr>";
+                echo "<tr>";
+                echo "<th style='border-right: 3px solid #fff;'>Previous Winner</th>";
+                echo "<td>" . $race->prior_winner['full_name'] . "</td>";
+                echo "</tr>";
                 echo "</table>";
                 echo "</div>";
 
