@@ -103,7 +103,7 @@
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
-                        <?php parse_cup_schedule(); ?>
+                        <?php show_next_race(); ?>
                     </div>  
                 </div>  
             </div>
@@ -146,17 +146,13 @@
                                 echo '<option value="twenty-eight" data-show=".week28">Semi-Final Round (Weeks 28-31)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Championship (Weeks 32-36)</option>';
                             }
-                            if($_GET['year'] == '2018') {
+                            if($_GET['year'] == '2018' || $_GET['year'] == '2019') {
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
-                                echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
-                            }
-                            if($_GET['year'] == '2019') {
-                                echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
-                                //echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                //echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                //echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                                if ($_GET['year'] == '2018') {
+                                    echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
+                                    echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+                                    echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>'; 
+                                }
                             }
                             ?>
                             

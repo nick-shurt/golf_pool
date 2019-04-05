@@ -322,24 +322,6 @@ function get_results($team, $file) {
     $team->set_points($points);
 }
 
-function get_results_test($team, $string) {
-    $xml2 = simplexml_load_string($string);
-    $points = 0;
-    
-    foreach ($team->get_drivers() as $driver) {
-        $driver_pts = 0;
-        foreach ($xml2->results->result as $result) {
-            if ($driver->get_driver() == $result->driver["full_name"]) {
-                $driver_pts = getPoints($result);                    
-            }             
-        }
-        //$driver_pts += check_for_bonus($driver, $file);
-        $driver->set_driver_points($driver_pts);
-        $points += $driver_pts;
-    }
-    $team->set_points($points);
-}
-
 function get_results_new($team, $raceId, $con) {
     $points = 0;
     
@@ -371,6 +353,23 @@ function get_season_points($drivers, $file) {
             }
         }
     }
+}
+
+function get_season_points_new($drivers, $raceId, $con) {
+    $points = 0;
+
+    foreach ($drivers as $driver) {
+        $getDriver = "SELECT driver, position, pole_win, stage_1_win, stage_2_win, stage_3_win FROM results WHERE race_id = '".$raceId."' AND driver = '".$driver->get_name()."'";
+        $res = mysqli_query($con, $getDriver);
+        $isFound = mysqli_num_rows($res);
+        $result_array = mysqli_fetch_array($res);
+
+        if ($isFound > 0) {
+            $points = getPointsNew($result_array);
+            $driver->add_season_pts($points);
+            $driver->add_start();
+        }
+    }  
 }
 
 function get_semifinal_matchups($teams, $week, $isComplete) {
@@ -976,62 +975,51 @@ $wk9_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 $num_pairs = array($wk1_pairs,$wk2_pairs,$wk3_pairs,$wk4_pairs,$wk5_pairs,$wk6_pairs,$wk7_pairs,$wk8_pairs,$wk9_pairs);
 
 
-function parse_cup_schedule() {
-    $xml = simplexml_load_file("2019_cup_schedule.xml");
 
-    $found = false;
-    foreach ($xml->season[0]->event as $event) {
-        foreach ($event->race as $race) {
-            $datetime1 = new DateTime();
-            $datetime2 = new DateTime($race['scheduled']);
-            $interval = $datetime1->diff($datetime2);
-            $elapsed_t = $datetime1->format('y-m-d h:i:s');
-            $elapsed_m = $interval->format('%m');
-            $elapsed_d = $interval->format('%r%a');
-            $elapsed_r = $elapsed_d[0];
-            $elapsed_h = $interval->format('%r%h');
-            $elapsed_dd = $interval->format('%r%d');
-            //echo $elapsed_t . " ";
-            //echo $elapsed_m . " ";
-            //echo $elapsed_d . " ";
-            //echo $elapsed_r . " ";
-            //echo $elapsed_dd . " ";
-            //echo $elapsed_h . " ";
-            //echo $race['number'] . " ";
-            //echo $race['scheduled'] . "<br>";
-            if (isset($race['number']) && $elapsed_m == '0' && ($elapsed_d >= '0' && $elapsed_r != '-') && !$found) {
-                $date = date_create($race['scheduled']);
-                $edt = new DateTimeZone('America/New_York');
-                $date->setTimezone($edt);
-                $currentDate = date("Y-m-d");
-                
-                echo "<h2 style='color: #fff;text-align: center;'>" . $race['name'] . " at " . $event->track['name'] . "</h2>";
-                echo "<div class='table-responsive' style='margin-top: 20px;margin-bottom: 20px;'>";
-                echo "<table class='table next_race'>";
+function show_next_race() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
 
-                echo "<tr>";
-                echo "<th style='border-right: 3px solid #fff;'><strong>Date</strong></th>";
-                echo "<td style='width:60%'>" . date_format($date, "D, M j, g:i A") . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<th style='border-right: 3px solid #fff;'>Distance</th>";
-                echo "<td>" . $race['laps'] . " laps/" . $race['distance'] . " miles" . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<th style='border-right: 3px solid #fff;'>TV Broadcast</th>";
-                echo "<td>" . $race->broadcast['network'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<th style='border-right: 3px solid #fff;'>Previous Winner</th>";
-                echo "<td>" . $race->prior_winner['full_name'] . "</td>";
-                echo "</tr>";
-                echo "</table>";
-                echo "</div>";
-
-                $found = true;
-            }
-        }
+    $con = new mysqli($servername, $username, $password);
+    if ($con->connect_error) {
+        die("Connection failed: " . $con->connect_error);
     }
+    if (!mysqli_select_db($con, "2019_nascar_races"))  {  
+        echo "Unable to locate the database";   
+        exit();  
+    }
+
+    $getRaces = "SELECT * FROM races WHERE closed = 0 LIMIT 1";
+    $res = mysqli_query($con, $getRaces);
+    $race_data = mysqli_fetch_array($res);
+
+    $date = date_create($race_data[4]);
+    $edt = new DateTimeZone('America/New_York');
+    $date->setTimezone($edt);
+
+    echo "<h2 style='color: #fff;text-align: center;'>" . $race_data[3] . " at " . $race_data[2] . "</h2>";
+    echo "<div class='table-responsive' style='margin-top: 20px;margin-bottom: 20px;'>";
+    echo "<table class='table next_race'>";
+
+    echo "<tr>";
+    echo "<th style='border-right: 3px solid #fff;'><strong>Date</strong></th>";
+    echo "<td style='width:60%'>" . date_format($date, "D, M j, g:i A") . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<th style='border-right: 3px solid #fff;'>Distance</th>";
+    echo "<td>" . $race_data[5] . " laps/" . $race_data[6] . " miles" . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<th style='border-right: 3px solid #fff;'>TV Broadcast</th>";
+    echo "<td>" . $race_data[7] . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<th style='border-right: 3px solid #fff;'>Previous Winner</th>";
+    echo "<td>" . $race_data[8] . "</td>";
+    echo "</tr>";
+    echo "</table>";
+    echo "</div>";
 }
 
 function get_current_week() {
@@ -1058,7 +1046,67 @@ function get_current_week() {
     echo $cur_week;
 }
 
-function database_test() {
+function upload_results($simpleXml, $con) {
+    $msg = "";
+    $error = false;
+
+    $race_id = $simpleXml['id'];
+
+    foreach ($simpleXml->results->result as $result) {
+        $test_id = $race_id;
+        $test_driver = $result->driver['full_name'];
+        $test_pos = $result['position'];
+        $test_pole = ($result['start_position'] == '1') ? true : false;
+        $test_stage1 = ($result['stage_1_win'] == true) ? true : false;
+        $test_stage2 = ($result['stage_2_win'] == true) ? true : false;
+        $test_stage3 = ($result['stage_3_win'] == true) ? true : false;
+        
+        $sql = "INSERT INTO results (race_id, driver, position, pole_win, stage_1_win, stage_2_win, stage_3_win) VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+        if ($stmt = $con->prepare($sql)) {
+            $stmt->bind_param("ssissss", $test_id, $test_driver, $test_pos, $test_pole, $test_stage1, $test_stage2, $test_stage3);
+            if ($stmt->execute()) {
+                $msg .= "The race results for " . $test_driver . " were uploaded successfully!<br>";
+            } else {
+                $msg .= "There was an error uploading the race results for " . $test_driver . ": Error 2<br>";
+                $error = true;
+            }
+        } else {
+            $msg .= "There was an error connecting to the database: Error 2<br>";
+            $error = true;
+        }
+    }
+
+    if (!$error) {
+        $sql2 = "UPDATE races SET closed = ? WHERE race_id = ?";
+        $closed = 1;
+        if ($stmt = $con->prepare($sql2)) {
+            $stmt->bind_param("is", $closed, $race_id);
+            if ($stmt->execute()) {
+                $msg .= "<br>This week's race has been successfully update to closed!<br>";
+            } else {
+                $msg .= "<br>There was an error updating this week's race to closed!<br>";
+                $error = true;
+            }
+        }
+    }
+
+    if (!$error) {
+        $headers = 'From: nshurtleff15@gmail.com' . "\r\n" . 
+                   'MIME-Version: 1.0' . "\r\n" .
+                   'Content-Type: text/html; charset=utf-8';
+
+        mail("nshurtleff15@gmail.com", "Upload Successful!", $msg, $headers);
+    } else {
+        $headers = 'From: nshurtleff15@gmail.com' . "\r\n" . 
+                   'MIME-Version: 1.0' . "\r\n" .
+                   'Content-Type: text/html; charset=utf-8';
+
+        mail("nshurtleff15@gmail.com", "Upload Failed", $msg, $headers);
+    }
+}
+
+function test_datetime() {
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -1072,91 +1120,35 @@ function database_test() {
         exit();  
     }
 
-    $race_ids = array();
-    $race_tracks = array();
-    $race_names = array();
-    $race_numbers = array();
-
-    $getRaces = "SELECT * FROM races";
+    $getRaces = "SELECT date, closed FROM races WHERE closed = 0 LIMIT 1";
     $res = mysqli_query($con, $getRaces);
-    
-    while($row = mysqli_fetch_array($res)) {
-        $race_ids[] = $row["race_id"];
-        $race_tracks[] = $row["track"];
-        $race_names[] = $row["race_name"];
-        $race_numbers[] = $row["race_number"];
-    }
+    $race_data = mysqli_fetch_array($res);
 
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
+    $race_date = date_create($race_data[0]);
+    $today_date = new DateTime();
+    //$today_date = new DateTime("2019-03-31T19:30:00+00:00");
+    $pdt = new DateTimeZone('America/Los_Angeles');
+    $race_date->setTimezone($pdt);
+    $today_date->setTimezone($pdt);
 
-    echo $race_ids[0] . "<br>";
-    echo $race_tracks[0] . "<br>";
-    echo $race_names[0] . "<br>";
-    echo $race_numbers[0] . "<br>";
+    $rd_month = $race_date->format('m');
+    $td_month = $today_date->format('m');
+    $rd_day = $race_date->format('d');
+    $td_day = $today_date->format('d');
+    $rd_total = $race_date->format('Y-m-d h:i:s');
+    $td_total = $today_date->format('Y-m-d h:i:s');
 
+    echo $rd_month . "<br>";
+    echo $td_month . "<br>";
+    echo $rd_day . "<br>";
+    echo $td_day . "<br>";
+    echo $rd_total . "<br>";
+    echo $td_total . "<br>";
 
-
-    $xml2 = simplexml_load_file("results/2019_texas_results.xml");
-    /*$request = "http://api.sportradar.us/nascar-ot3/mc/races/5b8487a5-af16-43a4-853c-b178010ddcdb/results.xml?api_key=mn4cqn7md4rn2dysmjkpgnks";
-
-    $cSession = curl_init();
-    curl_setopt($cSession,CURLOPT_URL,$request);
-    curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
-    curl_setopt($cSession,CURLOPT_HEADER, false);
-    $result=curl_exec($cSession);
-    curl_close($cSession);
-
-    $xml2 = simplexml_load_string($result);*/
-
-    $raceId = $xml2['id'];
-
-    $race_id = $raceId;
-    $track = $xml2->track['name'];
-    $race_name = $xml2['name'];
-    $race_num = $xml2['number'];
-
-    $sql2 = "INSERT INTO races (race_id, track, race_name, race_number) VALUES (?, ?, ?, ?)";
-
-    if ($stmt = $con->prepare($sql2)) {
-        $stmt->bind_param("sssi", $race_id, $track, $race_name, $race_num);
-        if ($stmt->execute()) {
-            foreach ($xml2->results->result as $result) {
-                $test_id = $raceId;
-                $test_driver = $result->driver['full_name'];
-                $test_pos = $result['position'];
-                $test_pole = ($result['start_position'] == '1') ? true : false;
-                $test_stage1 = ($result['stage_1_win'] == true) ? true : false;
-                $test_stage2 = ($result['stage_2_win'] == true) ? true : false;
-                $test_stage3 = ($result['stage_3_win'] == true) ? true : false;
-                
-                $sql = "INSERT INTO results (race_id, driver, position, pole_win, stage_1_win, stage_2_win, stage_3_win) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        
-                if ($stmt = $con->prepare($sql)) {
-                    $stmt->bind_param("ssissss", $test_id, $test_driver, $test_pos, $test_pole, $test_stage1, $test_stage2, $test_stage3);
-                    if ($stmt->execute()) {
-                        echo $raceId . "<br>";
-                    } else {
-                        echo '<script language="javascript">';
-                        echo 'alert("Error 2")';
-                        echo '</script>';
-                    }
-                } else {
-                    echo '<script language="javascript">';
-                    echo 'alert("Could not connect to Database")';
-                    echo '</script>';
-                }
-            }
-        } else {
-            echo '<script language="javascript">';
-            echo 'alert("Error 1")';
-            echo '</script>';
-        }
+    if ($rd_month == $td_month && $rd_day == $td_day) {
+        echo "true";
     } else {
-        echo '<script language="javascript">';
-        echo 'alert("Could not connect to Database")';
-        echo '</script>';
+        echo "false";
     }
 }
 
