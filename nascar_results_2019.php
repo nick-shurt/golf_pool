@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = $U_NAME;
+$password = $P_WORD;
 
 $con = new mysqli($servername, $username, $password);
 if ($con->connect_error) {
@@ -42,7 +42,7 @@ if ($rd_month == $td_month && $rd_day == $td_day) {
     curl_close($cSession);
 
     $xml2 = simplexml_load_string($result);
-    $isRaceOver = ($xml2['status'] == "closed") ? true : false;
+    $isRaceOver = ($xml2['status'] == "complete") ? true : false;
 
     if ($isRaceOver) {
         upload_results($xml2, $con);

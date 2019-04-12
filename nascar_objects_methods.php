@@ -976,10 +976,10 @@ $num_pairs = array($wk1_pairs,$wk2_pairs,$wk3_pairs,$wk4_pairs,$wk5_pairs,$wk6_p
 
 
 
-function show_next_race() {
+function show_next_race($U_Name, $P_Word) {
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = $U_Name;
+    $password = $P_Word;
 
     $con = new mysqli($servername, $username, $password);
     if ($con->connect_error) {

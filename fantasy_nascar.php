@@ -82,6 +82,7 @@
     </div>
 
     <?php 
+    include 'db_credentials.php';
     include 'nascar_objects_methods.php';
     if($_GET['year'] == '2017') {
         include 'nascar_drivers_teams_2017.php';
@@ -103,7 +104,7 @@
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
-                        <?php show_next_race(); ?>
+                        <?php show_next_race($U_NAME, $P_WORD); ?>
                     </div>  
                 </div>  
             </div>
