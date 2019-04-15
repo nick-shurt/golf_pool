@@ -119,6 +119,7 @@ class Driver {
 
     var $name;
     var $pts = 0;
+    var $pts_nb = 0;
     var $wk_pts = 0;
 
     function __construct($name) {
@@ -133,8 +134,16 @@ class Driver {
         $this->pts = $points;
     }
 
+    function set_driver_points_noBonus($points) {
+        $this->pts_nb = $points;
+    }
+
     function get_driver_points() {
         return $this->pts;
+    }
+
+    function get_driver_points_noBonus() {
+        return $this->pts_nb;
     }
 
     // FOR PLAYOFF MATCHUPS // 
@@ -178,6 +187,11 @@ class Team {
         $num--;
         return $this->drivers[$num]->get_driver_points();
     }
+
+    function get_driver_points_noBonus($num) {
+        $num--;
+        return $this->drivers[$num]->get_driver_points_noBonus();
+    } 
 
     function get_drivers() {
         return $this->drivers;
@@ -334,6 +348,7 @@ function get_results_new($team, $raceId, $con) {
 
         $driver_pts = getPointsNew($result_array);
         
+        $driver->set_driver_points_noBonus(41 - $result_array[1]);
         $driver->set_driver_points($driver_pts);
         $points += $driver_pts;
     }
@@ -720,7 +735,7 @@ function get_matchups($teams, $week, $num_pairs, $team_standings) {
 }
 
 function get_tiebreaker($team1, $team2) {
-    if (max($team1->get_driver_points(1),$team1->get_driver_points(2),$team1->get_driver_points(3)) > max($team2->get_driver_points(1),$team2->get_driver_points(2),$team2->get_driver_points(3))) {
+    if (max($team1->get_driver_points_noBonus(1),$team1->get_driver_points_noBonus(2),$team1->get_driver_points_noBonus(3)) > max($team2->get_driver_points_noBonus(1),$team2->get_driver_points_noBonus(2),$team2->get_driver_points_noBonus(3))) {
         return true;
     } else {
         return false;
@@ -976,7 +991,7 @@ $num_pairs = array($wk1_pairs,$wk2_pairs,$wk3_pairs,$wk4_pairs,$wk5_pairs,$wk6_p
 
 
 
-function show_next_race($U_Name, $P_Word) {
+function show_next_race($U_Name, $P_Word, $db) {
     $servername = "localhost";
     $username = $U_Name;
     $password = $P_Word;
@@ -985,7 +1000,7 @@ function show_next_race($U_Name, $P_Word) {
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     }
-    if (!mysqli_select_db($con, "2019_nascar_races"))  {  
+    if (!mysqli_select_db($con, $db))  {  
         echo "Unable to locate the database";   
         exit();  
     }

@@ -3,12 +3,13 @@
 $servername = "localhost";
 $username = $U_NAME;
 $password = $P_WORD;
+$db = $DATABASE;
 
 $con = new mysqli($servername, $username, $password);
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
-if (!mysqli_select_db($con, "2019_nascar_races"))  {  
+if (!mysqli_select_db($con, $db))  {  
     echo "Unable to locate the database";   
     exit();  
 }
@@ -42,7 +43,7 @@ if ($rd_month == $td_month && $rd_day == $td_day) {
     curl_close($cSession);
 
     $xml2 = simplexml_load_string($result);
-    $isRaceOver = ($xml2['status'] == "complete") ? true : false;
+    $isRaceOver = ($xml2['status'] == "complete" || $xml2['status'] == "closed") ? true : false;
 
     if ($isRaceOver) {
         upload_results($xml2, $con);
