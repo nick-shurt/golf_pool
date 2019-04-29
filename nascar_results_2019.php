@@ -42,7 +42,7 @@ if ($rd_month == $td_month && $rd_day == $td_day) {
     curl_close($cSession);
 
     $xml2 = simplexml_load_string($result);
-    $isRaceOver = ($xml2['status'] == "complete") ? true : false;
+    $isRaceOver = ($xml2['status'] == "complete" || $xml2['status'] == "closed") ? true : false;
 
     if ($isRaceOver) {
         upload_results($xml2, $con);
