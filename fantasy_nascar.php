@@ -104,7 +104,7 @@
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
-                        <?php show_next_race($U_NAME, $P_WORD); ?>
+                        <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
                     </div>  
                 </div>  
             </div>

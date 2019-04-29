@@ -3,12 +3,13 @@
 $servername = "localhost";
 $username = $U_NAME;
 $password = $P_WORD;
+$db = $DATABASE;
 
 $con = new mysqli($servername, $username, $password);
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
-if (!mysqli_select_db($con, "2019_nascar_races"))  {  
+if (!mysqli_select_db($con, $db))  {  
     echo "Unable to locate the database";   
     exit();  
 }
