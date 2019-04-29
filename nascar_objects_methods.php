@@ -1067,7 +1067,7 @@ function upload_results($simpleXml, $con) {
 
     $race_id = $simpleXml['id'];
 
-    foreach ($simpleXml->results->result as $result) {
+    /*foreach ($simpleXml->results->result as $result) {
         $test_id = $race_id;
         $test_driver = $result->driver['full_name'];
         $test_pos = $result['position'];
@@ -1090,9 +1090,39 @@ function upload_results($simpleXml, $con) {
             $msg .= "There was an error connecting to the database: Error 2<br>";
             $error = true;
         }
+    }*/
+
+    $sql = "INSERT INTO results (race_id, driver, position, pole_win, stage_1_win, stage_2_win, stage_3_win) VALUES ";
+    foreach ($simpleXml->results->result as $result) {
+        $test_id = $race_id;
+        $test_driver = $result->driver['full_name'];
+        $test_pos = $result['position'];
+        $test_pole = ($result['start_position'] == '1') ? 1 : 0;
+        $test_stage1 = ($result['stage_1_win'] == true) ? 1 : 0;
+        $test_stage2 = ($result['stage_2_win'] == true) ? 1 : 0;
+        $test_stage3 = ($result['stage_3_win'] == true) ? 1 : 0;
+        
+        $sql .= "('" . $test_id  . "', '" . $test_driver . "', '" . $test_pos  . "', '" . $test_pole  . "', '" . $test_stage1  . "', '" . $test_stage2  . "', '" . $test_stage3  . "'),";
+    }
+    $trim_sql = rtrim($sql,',');
+
+    if (mysqli_query($con, $trim_sql)) {
+        $msg = "Race results uploaded successfully!<br>";
+
+        $sql2 = "UPDATE races SET closed = 1 WHERE race_id = '".$race_id."'";
+        if (mysqli_query($con, $sql2)) {
+            $msg .= "<br>This week's race has been successfully updated to closed!<br>";
+        } else {
+            $msg .= "<br>There was an error updating this week's race to closed!<br>";
+            $error = true;
+        }
+    } else {
+        $msg = "There was an error uploading the results to the database.<br>" . mysqli_error($con) . "<br>";
+        $msg .= "<br>" . $trim_sql;
+        $error = true;
     }
 
-    if (!$error) {
+    /*if (!$error) {
         $sql2 = "UPDATE races SET closed = ? WHERE race_id = ?";
         $closed = 1;
         if ($stmt = $con->prepare($sql2)) {
@@ -1104,7 +1134,7 @@ function upload_results($simpleXml, $con) {
                 $error = true;
             }
         }
-    }
+    }*/
 
     if (!$error) {
         $headers = 'From: nshurtleff15@gmail.com' . "\r\n" . 
