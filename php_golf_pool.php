@@ -107,6 +107,18 @@ if (!mysqli_select_db($con, "golf_pool"))  {
     exit();  
 }
 
+$req = "https://statdata.pgatour.com/r/current/message.json";
+
+$cSession = curl_init();
+curl_setopt($cSession,CURLOPT_URL,$req);
+curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($cSession,CURLOPT_HEADER, false);
+$rez=curl_exec($cSession);
+curl_close($cSession);
+
+$rez_obj = json_decode($rez);
+$current_id = $rez_obj->tid;
+
 $entrants = array();
 $tier1_golfers = array();
 $tier2_golfers = array();
@@ -114,7 +126,7 @@ $tier3_golfers = array();
 $tier4_golfers = array();
 $totals = array();
 
-$getEntries = "SELECT * FROM entries WHERE event_id = '012'";
+$getEntries = "SELECT * FROM entries WHERE event_id = '".$current_id."'";
 $res = mysqli_query($con, $getEntries);
 $rowCount = mysqli_num_rows($res);
 
@@ -129,7 +141,7 @@ while($row = mysqli_fetch_array($res)) {
 
 $all_golfers = array($tier1_golfers, $tier2_golfers, $tier3_golfers, $tier4_golfers);
 
-$request = "https://statdata.pgatour.com/r/012/leaderboard-v2mini.json";
+$request = "https://statdata.pgatour.com/r/" . $current_id . "/leaderboard-v2mini.json";
 
 $cSession = curl_init();
 curl_setopt($cSession,CURLOPT_URL,$request);
@@ -140,6 +152,9 @@ curl_close($cSession);
 
 $obj = json_decode($result);
 $current_tourney = $obj->leaderboard->tournament_name;
+
+$tot = $obj->leaderboard->players[0]->total;
+$leader_score = ($tot >= 0) ? (($tot > 0) ? "+" . $tot : "E") : $tot;
 
 $entries = array();
 for ($i = 0; $i < $rowCount; $i++) {

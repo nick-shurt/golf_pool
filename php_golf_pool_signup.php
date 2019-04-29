@@ -45,4 +45,16 @@ while($row = mysqli_fetch_array($res)) {
     $tier4_golfers[] = $row["name"];
 }
 
+$req = "https://statdata.pgatour.com/r/current/message.json";
+
+$cSession = curl_init();
+curl_setopt($cSession,CURLOPT_URL,$req);
+curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($cSession,CURLOPT_HEADER, false);
+$rez=curl_exec($cSession);
+curl_close($cSession);
+
+$rez_obj = json_decode($rez);
+$current_id = $rez_obj->tid;
+
 ?>

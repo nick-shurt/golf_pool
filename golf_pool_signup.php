@@ -180,7 +180,7 @@ input[type=submit]:hover {
             exit();  
         }
 
-        $event_id = '012';
+        $event_id = $current_id;
         $name = $_POST['name'];
         $email = $_POST['email'];
         $tier1 = $_POST['tier1'];
