@@ -74,7 +74,7 @@
     <h1 style="text-align: Center; color: #fff"><?php echo $current_tourney; ?> Pool</h1>
     <h4 style="text-align: Center; color: #fff">Leader: <?php echo $obj->leaderboard->players[0]->player_bio->first_name . " " . $obj->leaderboard->players[0]->player_bio->last_name . " (" . $leader_score . ")" ; ?></h4>
     <div id="wrapper">
-        <?php if (!$is_started) { echo "<button type='button' class='btn btn-primary' style='display: flex;justify-content: center;' onclick='document.location.href='/golf_pool_signup.php';'>Sign Up for the Pool</button>"; } ?>
+        <?php if (!$is_started) { echo "<button type='button' class='btn btn-primary' style='display: flex;justify-content: center;' onclick='formRedirect()'>Sign Up for the Pool</button>"; } ?>
         <!-- <button type="button" class="btn btn-primary" style="display: flex;justify-content: center;" onclick="document.location.href='/golf_pool_signup.php';">Sign Up for the Pool</button> -->
     </div>
     <br>
@@ -236,6 +236,11 @@
             x = w.innerWidth || e.clientWidth || g.clientWidth;
 
             alert(x);
+        }
+    </script>
+    <script>
+        function formRedirect() {
+            document.location.href='/golf_pool_signup.php';
         }
     </script>
 </body>
