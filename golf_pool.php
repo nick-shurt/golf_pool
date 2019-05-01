@@ -102,7 +102,9 @@
                         echo $name[0];
                         echo "<br>";
                         echo $name[1];
-                        echo "<br>(T: -13)";
+                        echo "<br>(T: ";
+                        echo $entries[$i]->get_tiebreaker();
+                        echo ")";
                         echo "</td>";
                         echo "<td style='border-right: 3px solid #a3a6a8;background:";
                         echo ($entries[$i]->get_golfer_isWorst(1)) ? "#af4141'>(" : "#133451'>(";
@@ -167,6 +169,9 @@
                         echo "<tr>";
                         echo "<td style='border-right: 3px solid #a3a6a8;border-bottom: 8px solid #a3a6a8;background:#133451'>";
                         echo $entries[$i]->get_name();
+                        echo " &nbsp;(T: ";
+                        echo $entries[$i]->get_tiebreaker();
+                        echo ")";
                         echo "</td>";
                         echo "<td style='border-bottom: 8px solid #a3a6a8;background:#133451;border-right: 3px solid #a3a6a8;background:";
                         echo ($entries[$i]->get_golfer_isWorst(1)) ? "#af4141'>(" : "#133451'>(";
@@ -201,7 +206,7 @@
                         echo ($entries[$i]->get_golfer_score(4) >= 0) ? ($entries[$i]->get_golfer_score(4) > 0 ? "+" . $entries[$i]->get_golfer_score(4) : "E") : $entries[$i]->get_golfer_score(4);
                         echo "</td>";
                         echo "<td style='border-bottom: 8px solid #a3a6a8;background:#133451;'>";
-                        echo $entries[$i]->get_total();
+                        echo ($entries[$i]->get_total() >= 0) ? ($entries[$i]->get_total() > 0 ? "+" . $entries[$i]->get_total() : "E") : $entries[$i]->get_total();
                         echo "</td>";
                         echo "</tr>";
                     }

@@ -52,14 +52,12 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -79,7 +77,7 @@ input[type=submit]:hover {
         <label for="fname">Full Name:</label>
       </div>
       <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name...">
+        <input type="text" id="name" name="name" placeholder="Your name..." value="<?php echo $name; ?>" >
       </div>
     </div>
     <div class="row">
@@ -87,7 +85,7 @@ input[type=submit]:hover {
         <label for="email">Email:</label>
       </div>
       <div class="col-75">
-        <input type="text" id="email" name="email" placeholder="Your email...">
+        <input type="text" id="email" name="email" placeholder="Your email..." value="<?php echo $email; ?>" >
       </div>
     </div>
     <div class="row">
@@ -96,7 +94,7 @@ input[type=submit]:hover {
       </div>
       <div class="col-75">
         <select id="tier1" name="tier1">
-            <option value="dummy">-- Choose One --</option>
+            <option value="<?php echo $tier1; ?>"><?php echo $tier1; ?></option>
             <?php
             for ($i = 0; $i < sizeof($tier1_golfers); $i++) {
                 echo "<option value='" . $tier1_golfers[$i] . "'>" . $tier1_golfers[$i] . "</option>";
@@ -111,7 +109,7 @@ input[type=submit]:hover {
       </div>
       <div class="col-75">
         <select id="tier2" name="tier2">
-            <option value="dummy">-- Choose One --</option>
+            <option value="<?php echo $tier2; ?>"><?php echo $tier2; ?></option>
             <?php
             for ($i = 0; $i < sizeof($tier2_golfers); $i++) {
                 echo "<option value='" . $tier2_golfers[$i] . "'>" . $tier2_golfers[$i] . "</option>";
@@ -126,7 +124,7 @@ input[type=submit]:hover {
       </div>
       <div class="col-75">
         <select id="tier3" name="tier3">
-            <option value="dummy">-- Choose One --</option>
+            <option value="<?php echo $tier3; ?>"><?php echo $tier3; ?></option>
             <?php
             for ($i = 0; $i < sizeof($tier3_golfers); $i++) {
                 echo "<option value='" . $tier3_golfers[$i] . "'>" . $tier3_golfers[$i] . "</option>";
@@ -141,7 +139,7 @@ input[type=submit]:hover {
       </div>
       <div class="col-75">
         <select id="tier4" name="tier4">
-            <option value="dummy">-- Choose One --</option>
+            <option value="<?php echo $tier4; ?>"><?php echo $tier4; ?></option>
             <<?php
             for ($i = 0; $i < sizeof($tier4_golfers); $i++) {
                 echo "<option value='" . $tier4_golfers[$i] . "'>" . $tier4_golfers[$i] . "</option>";
@@ -155,7 +153,7 @@ input[type=submit]:hover {
         <label for="tiebreak">Winning Score:</label>
       </div>
       <div class="col-75">
-        <input type="text" id="score" name="score" placeholder="Your score...">
+        <input type="text" id="score" name="score" placeholder="Your score..." value="<?php echo $score; ?>" >
       </div>
     </div>
     <br>
@@ -166,7 +164,17 @@ input[type=submit]:hover {
   </form>
   <?php
   if (isset($_POST["submit"])) {
-    if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['tier1']) && !empty($_POST['tier2']) && !empty($_POST['tier3']) && !empty($_POST['tier4']) && !empty($_POST['score'])) {
+    $event_id = $current_id;
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tier1 = $_POST['tier1'];
+    $tier2 = $_POST['tier2'];
+    $tier3 = $_POST['tier3'];
+    $tier4 = $_POST['tier4'];
+    $score = $_POST['score'];
+
+    if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['score']) && $_POST['tier1'] != "-- Choose One --" && $_POST['tier2'] != "-- Choose One --" && $_POST['tier3'] != "-- Choose One --" && $_POST['tier4'] != "-- Choose One --") {
+      //if (!in_array($_POST['email'], $emails)) {
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -179,15 +187,6 @@ input[type=submit]:hover {
             echo "Unable to locate the database";   
             exit();  
         }
-
-        $event_id = $current_id;
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $tier1 = $_POST['tier1'];
-        $tier2 = $_POST['tier2'];
-        $tier3 = $_POST['tier3'];
-        $tier4 = $_POST['tier4'];
-        $score = $_POST['score'];
 
         $sql = "INSERT INTO entries (event_id, name, email, tier1_golfer, tier2_golfer, tier3_golfer, tier4_golfer, score) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -202,8 +201,11 @@ input[type=submit]:hover {
         } else {
             echo "<script type='text/javascript'>alert('Error: Could not connect to database');</script>";
         }
+      //} else {
+        //echo "<script type='text/javascript'>alert('An entry with this email already exists! Please use a different email address.');</script>";
+      //} 
     } else {
-        echo "<br>You must fill out all the fields!";
+        echo "<script type='text/javascript'>alert('You must fill out all the fields!');</script>";
     }
   }
   ?>

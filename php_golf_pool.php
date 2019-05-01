@@ -43,16 +43,22 @@ class Golfer {
 
 class Entry {
     var $name;
+    var $tiebreak_score;
     var $golfers;
     var $total = 0;
 
-    function __construct($name, $tier1, $tier2, $tier3, $tier4) {
+    function __construct($name, $tier1, $tier2, $tier3, $tier4, $tiebreaker) {
         $this->name = $name;
+        $this->tiebreak_score = $tiebreaker;
         $this->golfers = array($tier1, $tier2, $tier3, $tier4);
     }
 
     function get_name() {
         return $this->name;
+    }
+
+    function get_tiebreaker() {
+        return $this->tiebreak_score;
     }
 
     function get_golfer_name($tier) {
@@ -160,14 +166,20 @@ $entries = array();
 for ($i = 0; $i < $rowCount; $i++) {
     $golfers_scores = array();
     for ($k = 0; $k < 4; $k++) {
+        $found = false;
         foreach ($obj->leaderboard->players as $player) {
             if ($all_golfers[$k][$i] == ($player->player_bio->first_name . " " . $player->player_bio->last_name)) {
                 $golfer_score = new Golfer($all_golfers[$k][$i], $player->total, $player->thru, $player->status);
                 array_push($golfers_scores, $golfer_score);
+                $found = true;
             }
         }
+        if (!$found) {
+            $golfer_score = new Golfer($all_golfers[$k][$i], 0, null, "active");
+            array_push($golfers_scores, $golfer_score);
+        }
     }
-    $entry = new Entry($entrants[$i], $golfers_scores[0], $golfers_scores[1], $golfers_scores[2], $golfers_scores[3]);
+    $entry = new Entry($entrants[$i], $golfers_scores[0], $golfers_scores[1], $golfers_scores[2], $golfers_scores[3], $totals[$i]);
     array_push($entries, $entry);
 }
 
