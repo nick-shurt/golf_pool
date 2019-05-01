@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf</title>
+    <title>Golf Pool</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <style type="text/css">
@@ -74,7 +74,8 @@
     <h1 style="text-align: Center; color: #fff"><?php echo $current_tourney; ?> Pool</h1>
     <h4 style="text-align: Center; color: #fff">Leader: <?php echo $obj->leaderboard->players[0]->player_bio->first_name . " " . $obj->leaderboard->players[0]->player_bio->last_name . " (" . $leader_score . ")" ; ?></h4>
     <div id="wrapper">
-        <button type="button" class="btn btn-primary" style="display: flex;justify-content: center;" onclick="document.location.href='/golf_pool_signup.php';">Sign Up for the Pool</button>
+        <?php if (!$is_started) { echo "<button type='button' class='btn btn-primary' style='display: flex;justify-content: center;' onclick='document.location.href='/golf_pool_signup.php';'>Sign Up for the Pool</button>"; } ?>
+        <!-- <button type="button" class="btn btn-primary" style="display: flex;justify-content: center;" onclick="document.location.href='/golf_pool_signup.php';">Sign Up for the Pool</button> -->
     </div>
     <br>
     <div class="container-fluid">

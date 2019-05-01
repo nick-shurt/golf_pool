@@ -158,6 +158,7 @@ curl_close($cSession);
 
 $obj = json_decode($result);
 $current_tourney = $obj->leaderboard->tournament_name;
+$is_started = $obj->leaderboard->is_started;
 
 $tot = $obj->leaderboard->players[0]->total;
 $leader_score = ($tot >= 0) ? (($tot > 0) ? "+" . $tot : "E") : $tot;
