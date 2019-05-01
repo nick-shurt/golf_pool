@@ -44,12 +44,14 @@ class Golfer {
 class Entry {
     var $name;
     var $tiebreak_score;
+    var $tiebreak_diff;
     var $golfers;
     var $total = 0;
 
-    function __construct($name, $tier1, $tier2, $tier3, $tier4, $tiebreaker) {
+    function __construct($name, $tier1, $tier2, $tier3, $tier4, $tiebreaker, $leader) {
         $this->name = $name;
         $this->tiebreak_score = $tiebreaker;
+        $this->tiebreak_diff = abs($tiebreaker - $leader);
         $this->golfers = array($tier1, $tier2, $tier3, $tier4);
     }
 
@@ -59,6 +61,10 @@ class Entry {
 
     function get_tiebreaker() {
         return $this->tiebreak_score;
+    }
+
+    function get_tiebreak_diff() {
+        return $this->tiebreak_diff;
     }
 
     function get_golfer_name($tier) {
@@ -180,12 +186,12 @@ for ($i = 0; $i < $rowCount; $i++) {
             array_push($golfers_scores, $golfer_score);
         }
     }
-    $entry = new Entry($entrants[$i], $golfers_scores[0], $golfers_scores[1], $golfers_scores[2], $golfers_scores[3], $totals[$i]);
+    $entry = new Entry($entrants[$i], $golfers_scores[0], $golfers_scores[1], $golfers_scores[2], $golfers_scores[3], $totals[$i], $tot);
     array_push($entries, $entry);
 }
 
 function sort_entries($a,$b) {
-    return ($a->get_total() <= $b->get_total()) ? -1 : 1;
+    return ($a->get_total() <= $b->get_total()) ? (($a->get_total() == $b->get_total()) ? (($a->get_tiebreak_diff() < $b->get_tiebreak_diff()) ? -1 : 1) : -1) : 1;
 }
 
 usort($entries, "sort_entries");
