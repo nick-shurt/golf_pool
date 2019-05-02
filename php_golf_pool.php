@@ -19,13 +19,19 @@ class Golfer {
     }
 
     function get_golfer_score() {
-        return $this->score;
+        $score = $this->score;
+        if ($this->status == "wd") {
+            $score = 50;
+        }
+        return $score;
     }
 
     function get_golfer_thru() {
         $thru = "";
         if ($this->status == "cut") {
             $thru = "c";
+        } else if ($this->status == "wd") {
+            $thru = "wd";
         } else {
             $thru = ($this->thru != null) ? (($this->thru != '18') ? $this->thru : "F") : "--";
         }
