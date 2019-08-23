@@ -23,6 +23,9 @@ class Golfer {
         if ($this->status == "wd") {
             $score = 50;
         }
+        if ($this->status == "cut") {
+            $score += 20;
+        }
         return $score;
     }
 
@@ -170,7 +173,7 @@ curl_close($cSession);
 
 $obj = json_decode($result);
 $current_tourney = $obj->leaderboard->tournament_name;
-$is_started = $obj->leaderboard->is_started;
+$is_started = true;
 
 $tot = $obj->leaderboard->players[0]->total;
 $leader_score = ($tot >= 0) ? (($tot > 0) ? "+" . $tot : "E") : $tot;
@@ -181,6 +184,9 @@ for ($i = 0; $i < $rowCount; $i++) {
     for ($k = 0; $k < 4; $k++) {
         $found = false;
         foreach ($obj->leaderboard->players as $player) {
+            if ($all_golfers[$k][$i] == "Alex Bjork") {
+                $all_golfers[$k][$i] = "Alex Björk";
+            }
             if ($all_golfers[$k][$i] == ($player->player_bio->first_name . " " . $player->player_bio->last_name)) {
                 $golfer_score = new Golfer($all_golfers[$k][$i], $player->total, $player->thru, $player->status);
                 array_push($golfers_scores, $golfer_score);
