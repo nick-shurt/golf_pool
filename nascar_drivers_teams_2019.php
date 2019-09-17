@@ -416,4 +416,9 @@ $team_standings = array($team_jim,$team_rachel,$team_mike,$team_donna,$team_chiv
 $team_roster = $team_standings;
 $driver_rank = array();
 
+$team_nick = new Team("#4 Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+$team_jru = new Team("#5 Team Jru","Kevin Harvick","William Byron","Ryan Preece","Tanner Berryhill");
+
+$wildcard_teams = array($team_nick, $team_jru);
+
 ?>
