@@ -51,10 +51,24 @@ if ($rd_month == $td_month && $rd_day == $td_day) {
 }
 
 $race_ids = array();
+$wildcard = false;
+$semis = false;
+$finals = false;
 
 $getRaces = "SELECT * FROM races WHERE closed = 1";
 $res = mysqli_query($con, $getRaces);
 $race_count = mysqli_num_rows($res);
+
+if ($race_count > 27) {
+    $wildcard = true;
+    if ($race_count > 28) {
+        $semis = true;
+    }
+    if ($race_count > 32) {
+        $finals = true;
+    }
+    $race_count = 27;
+}
 
 while($row = mysqli_fetch_array($res)) {
     $race_ids[] = $row["race_id"];
@@ -70,6 +84,11 @@ while ($k < 10) {
 
 for ($i = 0; $i < $race_count; $i++) {
     get_season_points_new($season_drivers, $race_ids[$i], $con);
+}
+
+if ($wildcard) {
+    get_results_new($wildcard_teams[0], $race_ids[$i], $con);
+    get_results_new($wildcard_teams[1], $race_ids[$i], $con);
 }
 
 ?>
