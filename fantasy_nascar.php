@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="row">
-                    <?php                    
+                    <?php             
                         $i = 1;
                         $w = ($_GET['year'] == '2017') ? 26 : 27;
                         while ($i <= $w) {
@@ -181,7 +181,7 @@
                             get_championship_matchup($championship_teams, 30, true);
                         } else if ($_GET['year'] == '2019') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, true);
+                            get_semifinal_matchups($semifinal_teams, 29, ($race_count > 31) ? true : false);
                             //get_championship_matchup($championship_teams, 30, true);
                         }            
                     ?>

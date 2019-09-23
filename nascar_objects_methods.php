@@ -318,6 +318,25 @@ function get_playoff_results($team, $file) {
     $team->add_points($points);
 }
 
+function get_playoff_results_new($team, $raceId, $con) {
+    $points = 0;
+    
+    foreach ($team->get_drivers() as $driver) {
+        $driver_pts = 0;
+
+        $getDriver = "SELECT driver, position, pole_win, stage_1_win, stage_2_win, stage_3_win FROM results WHERE race_id = '".$raceId."' AND driver = '".$driver->get_driver()."'";
+        $res = mysqli_query($con, $getDriver);
+        $result_array = mysqli_fetch_array($res);
+
+        $driver_pts = getPointsNew($result_array);
+
+        $driver->add_driver_points($driver_pts);
+        $driver->set_weekly_result($driver_pts);
+        $points += $driver_pts;
+    }
+    $team->add_points($points);
+}
+
 function get_results($team, $file) {
     $xml2 = simplexml_load_file($file);
     $points = 0;
