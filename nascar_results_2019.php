@@ -58,6 +58,7 @@ $finals = false;
 $getRaces = "SELECT * FROM races WHERE closed = 1";
 $res = mysqli_query($con, $getRaces);
 $race_count = mysqli_num_rows($res);
+$playoff_count = 0;
 
 if ($race_count > 27) {
     $wildcard = true;
@@ -67,6 +68,7 @@ if ($race_count > 27) {
     if ($race_count > 32) {
         $finals = true;
     }
+    $playoff_count = $race_count - 27;
     $race_count = 27;
 }
 
@@ -92,10 +94,13 @@ if ($wildcard) {
 }
 
 if ($semis) {
-    get_playoff_results_new($semifinal_teams[0], $race_ids[28], $con);
-    get_playoff_results_new($semifinal_teams[1], $race_ids[28], $con);
-    get_playoff_results_new($semifinal_teams[2], $race_ids[28], $con);
-    get_playoff_results_new($semifinal_teams[3], $race_ids[28], $con);
+    $semis_count = $playoff_count - 1;
+    for ($s = 0; $s < $semis_count; $s++) {
+        get_playoff_results_new($semifinal_teams[0], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[1], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[2], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[3], $race_ids[$s + 28], $con);
+    }
 }
 
 ?>
