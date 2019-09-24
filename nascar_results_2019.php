@@ -87,8 +87,15 @@ for ($i = 0; $i < $race_count; $i++) {
 }
 
 if ($wildcard) {
-    get_results_new($wildcard_teams[0], $race_ids[$i], $con);
-    get_results_new($wildcard_teams[1], $race_ids[$i], $con);
+    get_results_new($wildcard_teams[0], $race_ids[27], $con);
+    get_results_new($wildcard_teams[1], $race_ids[27], $con);
+}
+
+if ($semis) {
+    get_playoff_results_new($semifinal_teams[0], $race_ids[28], $con);
+    get_playoff_results_new($semifinal_teams[1], $race_ids[28], $con);
+    get_playoff_results_new($semifinal_teams[2], $race_ids[28], $con);
+    get_playoff_results_new($semifinal_teams[3], $race_ids[28], $con);
 }
 
 ?>
