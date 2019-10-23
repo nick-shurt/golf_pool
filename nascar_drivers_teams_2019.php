@@ -428,4 +428,9 @@ $team_rachel = new Team("#3 Team Rachel","Brad Keselowski","Daniel Suarez","Dani
 
 $semifinal_teams = array($team_docks, $team_nick, $team_matt, $team_rachel);
 
+$team_matt = new Team("#2 Team Matt","Chase Elliott","Ryan Blaney","Matt DiBenedetto","Dale Earnhardt Jr");
+$team_nick = new Team("#4 Team Nick","Martin Truex Jr","Clint Bowyer","Chris Buescher","Michael McDowell");
+
+$championship_teams = array($team_matt, $team_nick);
+
 ?>

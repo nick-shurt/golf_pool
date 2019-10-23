@@ -151,9 +151,7 @@
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
                                 echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                if ($_GET['year'] == '2018') {
-                                    echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>'; 
-                                }
+                                echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
                             }
                             ?>
                             
@@ -181,8 +179,8 @@
                             get_championship_matchup($championship_teams, 30, true);
                         } else if ($_GET['year'] == '2019') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, ($race_count > 31) ? true : false);
-                            //get_championship_matchup($championship_teams, 30, true);
+                            get_semifinal_matchups($semifinal_teams, 29, true);
+                            get_championship_matchup($championship_teams, 30, false);
                         }            
                     ?>
                 </div>

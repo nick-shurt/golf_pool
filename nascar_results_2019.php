@@ -103,4 +103,12 @@ if ($semis) {
     }
 }
 
+if ($finals) {
+    $finals_count = $playoff_count - 5;
+    for ($f = 0; $f < $finals_count; $f++) {
+        get_playoff_results_new($championship_teams[0], $race_ids[$f + 32], $con);
+        get_playoff_results_new($championship_teams[1], $race_ids[$f + 32], $con);
+    }
+}
+
 ?>
