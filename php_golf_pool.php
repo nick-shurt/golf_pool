@@ -1,5 +1,5 @@
 <?php
-include 'db_credentials';
+include 'db_credentials.php';
 
 class Golfer {
     var $name;

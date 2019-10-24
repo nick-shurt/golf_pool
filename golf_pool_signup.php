@@ -70,7 +70,7 @@ input[type=submit]:hover {
 
 <?php 
 include 'php_golf_pool_signup.php';
-include 'db_credentials'; 
+include 'db_credentials.php'; 
 ?>
 
 <div class="container">

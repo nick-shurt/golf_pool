@@ -1,5 +1,5 @@
 <?php
-include 'db_credentials';
+include 'db_credentials.php';
 
 $name = (!empty($_POST['name'])) ? $_POST['name'] : "";
 $email = (!empty($_POST['email'])) ? $_POST['email'] : "";
