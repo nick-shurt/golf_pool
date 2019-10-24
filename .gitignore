@@ -2,3 +2,4 @@
 **/dashboard
 index.php
 db_credentials.php
+settings.json
