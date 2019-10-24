@@ -1,4 +1,5 @@
 <?php
+include 'db_credentials';
 
 class Golfer {
     var $name;
@@ -116,14 +117,14 @@ class Entry {
 }
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = $U_NAME;
+$password = $P_WORD;
 
 $con = new mysqli($servername, $username, $password);
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
-if (!mysqli_select_db($con, "golf_pool"))  {  
+if (!mysqli_select_db($con, $DATABASE))  {
     echo "Unable to locate the database";   
     exit();  
 }

@@ -1,4 +1,5 @@
 <?php
+include 'db_credentials';
 
 $name = (!empty($_POST['name'])) ? $_POST['name'] : "";
 $email = (!empty($_POST['email'])) ? $_POST['email'] : "";
@@ -9,14 +10,14 @@ $tier4 = (!empty($_POST['tier4'])) ? $_POST['tier4'] : "-- Choose One --";
 $score = (!empty($_POST['score'])) ? $_POST['score'] : "";
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = $U_NAME;
+$password = $P_WORD;
 
 $con = new mysqli($servername, $username, $password);
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
-if (!mysqli_select_db($con, "golf_pool"))  {  
+if (!mysqli_select_db($con, $DATABASE))  {
     echo "Unable to locate the database";   
     exit();  
 }

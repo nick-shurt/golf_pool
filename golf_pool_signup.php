@@ -68,7 +68,10 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<?php include 'php_golf_pool_signup.php'; ?>
+<?php 
+include 'php_golf_pool_signup.php';
+include 'db_credentials'; 
+?>
 
 <div class="container">
   <form action="" method="POST">
@@ -176,14 +179,14 @@ input[type=submit]:hover {
     if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['score']) && $_POST['tier1'] != "-- Choose One --" && $_POST['tier2'] != "-- Choose One --" && $_POST['tier3'] != "-- Choose One --" && $_POST['tier4'] != "-- Choose One --") {
       //if (!in_array($_POST['email'], $emails)) {
         $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $username = $U_NAME;
+        $password = $P_WORD;
 
         $con = new mysqli($servername, $username, $password);
         if ($con->connect_error) {
             die("Connection failed: " . $con->connect_error);
         }
-        if (!mysqli_select_db($con, "golf_pool"))  {  
+        if (!mysqli_select_db($con, $DATABASE))  {  
             echo "Unable to locate the database";   
             exit();  
         }
