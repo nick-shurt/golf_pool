@@ -173,7 +173,8 @@ $result=curl_exec($cSession);
 curl_close($cSession);
 
 $obj = json_decode($result);
-$current_tourney = ucwords(srtolower($obj->leaderboard->tournament_name));
+$current_tourney = $obj->leaderboard->tournament_name;
+$current_tourney = ucwords(strtolower($current_tourney));
 $is_started = true;
 
 $tot = $obj->leaderboard->players[0]->total;
