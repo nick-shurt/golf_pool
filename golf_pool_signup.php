@@ -58,6 +58,24 @@ input[type=submit]:hover {
   clear: both;
 }
 
+.main {
+  position: relative;
+  padding: 15px 7px 15px 7px;
+}
+
+.photo-mobile {
+  display: block;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  max-width: 65px;
+  max-height: 65px;
+  border: 0;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -212,6 +230,13 @@ include 'db_credentials.php';
     }
   }
   ?>
+
+  <div class="main">
+    <div class="photo-mobile">
+      <img class="photo" alt="Tiger Woods" src="https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_h
+eadshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_08793.png">
+    </div>
+  </div>
 </div>
 
 </body>

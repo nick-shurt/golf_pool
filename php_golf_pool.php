@@ -4,15 +4,19 @@ include 'db_credentials.php';
 class Golfer {
     var $name;
     var $score;
+    var $today;
     var $thru;
     var $status;
+    var $place;
     var $isWorst = false;
 
-    function __construct($name, $score, $thru, $status) {
+    function __construct($name, $score, $today, $thru, $status, $place) {
         $this->name = $name;
         $this->score = $score;
+        $this->today = $today;
         $this->thru = $thru;
         $this->status = $status;
+        $this->place = $place;
     }
 
     function get_golfer_name() {
@@ -30,6 +34,34 @@ class Golfer {
         return $score;
     }
 
+    function get_golfer_place() {
+        $place = $this->place;
+        $tied = false;
+        if ($place[0] == "T") {
+            $place = substr($place, 1);
+            $tied = true;
+        }
+        $temp = $place;
+        if ((int)$place > 9) {           
+            $place = substr($place, 1);
+        }
+        if ($place[0] == "1" && $temp != "11") {
+            $temp .= "st";
+        } else if ($place[0] == "2" && $temp != "12") {
+            $temp .= "nd";
+        } else if ($place[0] == "3" && $temp != "13") {
+            $temp .= "rd";
+        } else {
+            $temp .= "th";
+        }
+
+        if ($tied) {
+            $temp = "T-" . $temp;
+        }
+
+        return $temp;
+    }
+
     function get_golfer_thru() {
         $thru = "";
         if ($this->status == "cut") {
@@ -40,6 +72,10 @@ class Golfer {
             $thru = ($this->thru != null) ? (($this->thru != '18') ? $this->thru : "F") : "--";
         }
         return $thru;
+    }
+
+    function get_golfer_today() {
+        return $this->today;
     }
 
     function set_isWorst($value) {
@@ -93,6 +129,14 @@ class Entry {
         return $this->golfers[$tier - 1]->get_isWorst();
     }
 
+    function get_golfer_place($tier) {
+        return $this->golfers[$tier - 1]->get_golfer_place();
+    }
+
+    function get_golfer_today($tier) {
+        return $this->golfers[$tier - 1]->get_golfer_today();
+    }
+
     function get_total() {
         $this->total = 0;
         $unused_golfer;
@@ -115,6 +159,70 @@ class Entry {
 
     }
 }
+
+class Player {
+    var $name;
+    var $image;
+    var $flag;
+    var $country;
+
+    function __construct($name, $image, $flag, $country) {
+        $this->name = $name;
+        $this->image = $image;
+        $this->flag = $flag;
+        $this->country = $country;
+    }
+
+    function getName() {
+        return $this->name;
+    }
+
+    function getImage() {
+        return $this->image;
+    }
+
+    function getflag() {
+        return $this->flag;
+    }
+
+    function getCountry() {
+        return $this->country;
+    }
+}
+
+$matthew_fitzpatrick = new Player("Matthew Fitzpatrick", 
+                                  "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_40098.png",
+                                  "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/ENG.png",
+                                  "England");
+$xander_schauffele = new Player("Xander Schauffele",
+                                "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_48081.png",
+                                "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/USA.png",
+                                "United States");
+$rory_mcilroy = new Player("Rory McIlroy",
+                           "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_28237.png",
+                           "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/NIR.png",
+                           "Northern Ireland");
+$adam_scott = new Player("Adam Scott",
+                         "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_24502.png",
+                         "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/AUS.png",
+                         "Australia");
+$louis_oosthuizen = new Player("Louis Oosthuizen",
+                               "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_26329.png",
+                               "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/RSA.png",
+                               "South Africa");
+$abraham_ancer = new Player("Abraham Ancer",
+                            "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_45526.png",
+                            "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/MEX.png",
+                            "Mexico");
+$patrick_reed = new Player("Patrick Reed",
+                           "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_34360.png",
+                           "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/USA.png",
+                           "United States");
+$tyrrell_hatton = new Player("Tyrrell Hatton",
+                             "https://pga-tour-res.cloudinary.com/image/upload/b_rgb:cecece,c_fill,d_headshots_default.png,dpr_2.0,f_jpg,g_face:center,h_65,q_auto,w_65/headshots_34363.png",
+                             "https://www.pgatour.com/etc/designs/pgatour-libs/img/flags/24x24/ENG.png",
+                             "England");
+$player_array = array($matthew_fitzpatrick, $xander_schauffele, $rory_mcilroy, $adam_scott, $louis_oosthuizen, $abraham_ancer, $patrick_reed, $tyrrell_hatton);
 
 $servername = "localhost";
 $username = $U_NAME;
@@ -139,7 +247,8 @@ $rez=curl_exec($cSession);
 curl_close($cSession);
 
 $rez_obj = json_decode($rez);
-$current_id = $rez_obj->tid;
+//$current_id = $rez_obj->tid;
+$current_id = '489';
 
 $entrants = array();
 $tier1_golfers = array();
@@ -177,6 +286,18 @@ $current_tourney = $obj->leaderboard->tournament_name;
 $current_tourney = ucwords(strtolower($current_tourney));
 $is_started = true;
 
+$request2 = "https://statdata.pgatour.com/r/" . $current_id . "/leaderboard-v2.json";
+
+$cSession = curl_init();
+curl_setopt($cSession,CURLOPT_URL,$request2);
+curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($cSession,CURLOPT_HEADER, false);
+$result2=curl_exec($cSession);
+curl_close($cSession);
+
+$obj2 = json_decode($result2);
+$player_name = $obj2->leaderboard->players[0]->player_bio->last_name . ", " . $obj2->leaderboard->players[0]->player_bio->first_name;
+
 $tot = $obj->leaderboard->players[0]->total;
 $leader_score = ($tot >= 0) ? (($tot > 0) ? "+" . $tot : "E") : $tot;
 
@@ -189,14 +310,15 @@ for ($i = 0; $i < $rowCount; $i++) {
             if ($all_golfers[$k][$i] == "Alex Bjork") {
                 $all_golfers[$k][$i] = "Alex Björk";
             }
-            if ($all_golfers[$k][$i] == ($player->player_bio->first_name . " " . $player->player_bio->last_name)) {
-                $golfer_score = new Golfer($all_golfers[$k][$i], $player->total, $player->thru, $player->status);
+            $golfer = $player->player_bio->first_name . " " . $player->player_bio->last_name;
+            if (strcasecmp($all_golfers[$k][$i], $golfer) == 0) {
+                $golfer_score = new Golfer($all_golfers[$k][$i], $player->total, $player->today, $player->thru, $player->status, $player->current_position);
                 array_push($golfers_scores, $golfer_score);
                 $found = true;
             }
         }
         if (!$found) {
-            $golfer_score = new Golfer($all_golfers[$k][$i], 0, null, "active");
+            $golfer_score = new Golfer($all_golfers[$k][$i], 0, 0, null, "active", "N/A");
             array_push($golfers_scores, $golfer_score);
         }
     }
