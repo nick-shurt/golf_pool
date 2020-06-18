@@ -1,16 +1,7 @@
 <?php
+include 'php_golf_pool.php';
+
 $name = $_REQUEST["name"];
-
-$request2 = "https://statdata.pgatour.com/r/489/leaderboard-v2.json";
-
-$cSession = curl_init();
-curl_setopt($cSession,CURLOPT_URL,$request2);
-curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
-curl_setopt($cSession,CURLOPT_HEADER, false);
-$result2=curl_exec($cSession);
-curl_close($cSession);
-
-$obj2 = json_decode($result2);
 
 $golfer = $obj2->leaderboard->players[0];
 
